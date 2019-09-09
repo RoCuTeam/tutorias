@@ -1,0 +1,25 @@
+.main{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+
+.perfil{
+  width: 40%;
+  min-height: 400px;
+  background: rgba(182, 199, 245, 0.75);
+  border-radius: 15px;
+  margin: 50px 5%;
+
+}
+
+.tramite{
+  width: 40%;
+  min-height: 400px;
+
+  background: rgba(182, 199, 245, 0.75);
+
+  border-radius: 15px;
+
+  margin: 50px 50px;
+}
