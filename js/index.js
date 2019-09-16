@@ -13,5 +13,15 @@ function login (){
 }
 
 function menu(){
-  location.href = "home.html";
+  var opcion = confirm("Esta a punto de ingresar al sistema");
+    if (opcion == true) {
+        location.href = "home.html";
+	} else {
+
+	}
+}
+
+function autoEv(){
+  alert("Esta a punto de ingresar al sistema");
+  location.href = "autoevaluacion.html";
 }

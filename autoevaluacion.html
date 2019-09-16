@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+    <meta charset="utf-8">
+    <title>Autoevaluación</title>
+    <link rel="stylesheet" href="css/autoevaluacion.css">
+    <script type="text/javascript" src="js/autoevaluacion.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <a><li>Inicio</li></a>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="spacer"></div>
+
+    <main>
+      <section class="menu" id="menu">
+        <ul>
+          <li id="presentacion" onclick="presentacion()">Presentación</li>
+          <li id="eje1" onclick="eje1()">Eje 1</li>
+          <li id="eje2">Eje 2</li>
+          <li id="eje3">Eje 3</li>
+          <li id="eje4">Eje 4</li>
+          <li id="eje5">Eje 5</li>
+          <li id="eje6">Eje 6</li>
+          <li id="eje7">Eje 7</li>
+        </ul>
+      </section>
+
+      <section class="contenido" id="contenido">
+        <h2>Fundamentos y condiciones de operación</h2>
+        <!--Agregar form-->
+        <section class="formulario">
+          <h4 class="subeje obligatorio">1.1 Entendimiento de la IES y su contexto</h4>
+          <h5 >A) Descripción</h5>
+          <label for="1.1.a.1">Describa la ubicación y zona geográfica: </label>
+          <textarea name="ubicacion" id="1.1.a.1" placeholder="Zona geográfica..."></textarea>
+          <label for="1.1.a.2">Caracter: </label>
+          <select class="" name="caracter" id="1.1.a.2">
+            <option value="Público">Público</option>
+            <option value="Privado">Privado</option>
+          </select>
+          <label for="1.1.a.3">Antigüedad de la IES: </label>
+          <input type="number" name="antiguedad" id="1.1.a.3" value="" placeholder="0"><span class="complemento"> Años</span>
+          <label for="1.1.a.4">Misión: </label>
+          <textarea name="descripcion" id="1.1.a.1" placeholder="Misión..."></textarea>
+          <label for="1.1.a.5">Visión: </label>
+          <textarea name="descripcion" id="1.1.a.1" placeholder="Visión..."></textarea>
+          <label for="1.1.a.6">Valores: </label>
+          <textarea name="descripcion" id="1.1.a.1" placeholder="Valores..."></textarea>
+
+          <h5 >B) Documentos</h5>
+          <label class="lab-documentos" for="1.1.b.1">Añadir documentos en caso de existir</label>
+          <input class="documentos" type="file" name="documentos" id="1.1.b.1" value="">
+
+          <h5 >C) Información adicional</h5>
+          <label for="1.1.c.1">Información adicional que deberá estar disponible, en versión impresa o preferentemente electrónica, durante la visita de pares.</label>
+          <textarea name="adicional" id="1.1.c.1" placeholder="Información adicional..."></textarea>
+        </section>
+      </section>
+
+    </main>
+  </body>
+</html>
