@@ -64,6 +64,24 @@ main {
     main .contenido img {
       width: 50%;
       margin: 25px 25%; }
+    main .contenido .botones-save {
+      width: 80%;
+      margin: 0 10%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-end; }
+      main .contenido .botones-save .btn {
+        width: 150px;
+        height: 50px;
+        margin: 15px 0;
+        padding: auto;
+        font-size: 20px; }
+      main .contenido .botones-save .btn-save {
+        background: maroon;
+        color: white; }
+        main .contenido .botones-save .btn-save:hover {
+          background: rgba(128, 0, 0, 0.5);
+          transform: scale(1.05); }
     main .contenido .formulario {
       width: 80%;
       margin: 25px 10%;
@@ -97,6 +115,7 @@ main {
         font-size: 16px;
         padding: 5px; }
       main .contenido .formulario input[type="number"] {
+        text-align: right;
         padding: 5px;
         width: 20%;
         height: 25px;
@@ -139,10 +158,13 @@ main {
     width: 20%;
     height: 100%; }
     main .menu ul {
+      width: 20%;
+      margin: 0 auto;
+      position: fixed;
       list-style: none;
       display: flex;
       flex-flow: column wrap;
-      align-items: center;
+      align-items: left;
       justify-content: flex-start;
       background: rgba(128, 0, 0, 0.8); }
       main .menu ul li {

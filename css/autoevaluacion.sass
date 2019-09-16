@@ -72,6 +72,26 @@ main
       width: 50%
       margin: 25px 25%
 
+    .botones-save
+      width: 80%
+      margin: 0 10%
+      display: flex
+      flex-flow: row wrap
+      justify-content: flex-end
+      .btn
+        width: 150px
+        height: 50px
+        margin: 15px 0
+        padding: auto
+        font-size: 20px
+
+      .btn-save
+        background: rgba(128, 0, 0, 1)
+        color: white
+        &:hover
+          background: rgba(128, 0, 0, 0.5)
+          transform: scale(1.05)
+
     .formulario
       width: 80%
       margin: 25px 10%
@@ -107,6 +127,7 @@ main
         padding: 5px
       input
         &[type="number"]
+          text-align: right
           padding: 5px
           width: 20%
           height: 25px
@@ -151,10 +172,13 @@ main
     width: 20%
     height: 100%
     ul
+      width: 20%
+      margin: 0 auto
+      position: fixed
       list-style: none
       display: flex
       flex-flow: column wrap
-      align-items: center
+      align-items: left
       justify-content: flex-start
       background: rgba(128, 0, 0, 0.8)
       li
