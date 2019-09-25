@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
   	<meta charset="utf-8">
+  	<link rel="shortcut icon" href="img/logo.png">
   	<title>Usuario</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/home.css">
@@ -16,7 +17,7 @@
   			<div class="over-content" id="over-content"></div>
   			<nav>
   				<ul>
-  					<a href="#"> <li>Principal</li> </a>
+  					<a href="index.html"> <li>Principal</li> </a>
   					<a href="#"> <li>Nosotros</li> </a>
   					<a href="#"> <li>Universidades</li> </a>
   				</ul>
@@ -29,6 +30,7 @@
         <div class="perfil-usuario">
           <div class="logo" style="background-image: url('img/avatar.png')"></div>
           <p>
+            <span class="titulo">Perfil del usuario</span>
             <span class="dato">Nombre: </span><span class="valor">Cuauhtli Fernando</span><br>
             <span class="dato">Apellidos: </span><span class="valor">Benavides Hernández</span><br>
             <span class="dato">Correo: </span><span class="valor">cuauh_fer_bh@hotmail.com</span><br>
@@ -36,19 +38,20 @@
             <span class="dato">Teléfono celular: </span><span class="valor">3310694784</span><br>
             <span class="dato">Titulo: </span><span class="valor">Encargado de UdeG</span><br>
 
-            <button class="btn secondary" type="button" name="button">Editar</button>
+            <button class="btn primary" type="button" name="button">Editar</button>
           </p>
         </div>
         <hr>
         <div class="perfil-uni">
           <div class="logo" style="background-image: url('img/udg.png')"></div>
           <p>
-            <span class="dato">Nombre: </span><span class="valor">Universidad de Guadalajara</span><br>
-            <span class="dato">Ciudad: </span><span class="valor">Guadalajara</span><br>
-            <span class="dato">Estado: </span><span class="valor">Jalisco</span><br>
-            <span class="dato">Dirección: </span><span class="valor">Av. Boulevard 5434</span><br>
-            <span class="dato">Página web: </span><span class="valor">www.udg.mx</span><br>
-            <span class="dato">Teléfono: </span><span class="valor">1231231232</span>
+            <span class="titulo">Perfil de la universidad</span>
+            <span class="dato">Nombre:        </span><span class="valor">Universidad de Guadalajara</span><br>
+            <span class="dato">Ciudad:        </span><span class="valor">Guadalajara</span><br>
+            <span class="dato">Estado:        </span><span class="valor">Jalisco</span><br>
+            <span class="dato">Dirección:     </span><span class="valor">Av. Boulevard 5434</span><br>
+            <span class="dato">Página web:    </span><span class="valor">www.udg.mx</span><br>
+            <span class="dato">Teléfono:      </span><span class="valor">1231231232</span>
 
             <button class="btn primary" type="button" name="button">Editar</button>
           </p>
@@ -56,16 +59,17 @@
       </section>
 
       <section class="tramite">
+        <div class="logo" style="background-image: url('img/registro.png')"></div>
         <article class="">
-          <h2>Iniciar registro</h2>
+          <h2 class="titulo">Iniciar registro</h2>
           <p>Iniciar tu proceso de registro para la evaluación de tu programa de tutorias</p>
           <ul>
-            <li>Estado: <span>Sin iniciar</span></li>
-            <li>Fecha de inicio: <span>--/--/----</span></li>
-            <li>Fecha limite: <span>--/--/----</span></li>
-            <li>Progreso: <span>N/A</span></li>
+            <li><span class="dato">Estado:</span>          <span class="valor">Sin iniciar</span></li>
+            <li><span class="dato">Fecha de inicio:</span> <span class="valor">--/--/----</span></li>
+            <li><span class="dato">Fecha limite:</span>    <span class="valor">--/--/----</span></li>
+            <li><span class="dato">Progreso: </span>       <span class="valor">N/A</span></li>
           </ul>
-          <button class="btn-primary" type="button" name="button" onclick="autoEv()" href="autoevaluacion.html">Comenzar</button>
+          <button class="btn primary" type="button" name="button" onclick="autoEv()" href="autoevaluacion.html">Comenzar</button>
         </article>
       </section>
 

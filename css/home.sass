@@ -13,7 +13,7 @@ main
   align-items: baseline
   width: 45%
   min-height: 400px
-  background: rgba(255, 255, 255, 1)
+  background: $white
   border-radius: 15px
   margin: 2.5%
   margin-top: 50px
@@ -36,7 +36,7 @@ main
       justify-content: space-between
       line-height: 20px
       flex-flow: row wrap
-      border: 2px solid rgba(0, 255, 0, 0.75)
+      border: 2px solid $primary
       border-radius: 25px
       padding: 25px
       padding-top: 100px
@@ -45,6 +45,12 @@ main
         width: 30%
       .valor
         width: 70%
+      .titulo
+        width: 100%
+        text-align: center
+        font-weight: bold
+        font-size: 20px
+        padding-bottom: 15px
 
   .perfil-uni
     margin-top: 50px
@@ -64,7 +70,7 @@ main
       display: flex
       justify-content: space-between
       flex-flow: row wrap
-      border: 2px solid rgba(0, 255, 0, 0.75)
+      border: 2px solid $primary
       border-radius: 25px
       padding: 25px
       padding-top: 100px
@@ -73,10 +79,65 @@ main
         width: 30%
       .valor
         width: 70%
+      .titulo
+        width: 100%
+        text-align: center
+        font-weight: bold
+        font-size: 20px
+        padding-bottom: 15px
 
 .tramite
+  display: flex
+  justify-content: flex-start
+  flex-flow: column wrap
+  align-items: flex-start
   width: 45%
   min-height: 400px
-  background: rgba(182, 199, 245, 0.75)
-  border-radius: 5px
+  background: $white
+  border-radius: 15px
   margin: 2.5%
+  margin-top: 100px
+  padding: 20px
+  position: relative
+  .logo
+    position: absolute
+    width: 30%
+    height: 200px
+    background-position: center
+    background-repeat: no-repeat
+    background-size: contain
+    margin: 10px auto
+    top: -10%
+    left: 35%
+  article
+    display: flex
+    justify-content: space-between
+    flex-flow: row wrap
+    border: 2px solid $primary
+    border-radius: 25px
+    padding: 25px
+    padding-top: 100px
+    margin-top: 40px
+    p
+      text-align: justify
+      padding-bottom: 20px
+    ul
+      list-style: none
+      list-style-type: none
+      display: flex
+      flex-flow: row wrap
+      li
+        width: 100%
+        line-height: 20px
+        display: flex
+        flex-flow: row wrap
+        .dato
+          width: 30%
+        .valor
+          width: 70%
+    .titulo
+      width: 100%
+      text-align: center
+      font-weight: bold
+      font-size: 24px
+      padding-bottom: 15px

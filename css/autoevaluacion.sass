@@ -1,4 +1,4 @@
-$color-primario: rgba(0, 0, 0, 0.5)
+@import botones
 
 *
   margin: 0
@@ -14,14 +14,15 @@ header
   position: fixed
   width: 100%
   height: 60px
-  background: rgba(0, 0, 0, 0.75)
+  background: $black-bg
 
   nav
     position: absolute
     width: 100%
     height: 60px
     bottom: 0%
-    background: $color-primario
+    background: $black-bg
+
 
     ul
       list-style: none
@@ -34,13 +35,13 @@ header
 
         li
           text-align: center
-          color: rgba(255, 255, 255, 1)
+          color: $white
           font-size: 24px
           padding: 18px 25px
           cursor: pointer
 
-        &hover
-          background: rgba(0, 0, 255, 0.25)
+        //&hover
+          //background: rgba(0, 0, 255, 0.25)
 
 .spacer
   width: 100%
@@ -50,13 +51,13 @@ main
   display: flex
   justify-content: space-between
   flex-flow: wrap
-  background: rgba(128, 0, 0, 1)
+  background: $secondary
   .contenido
     width: 80%
     display: flex
     justify-content: space-between
     flex-flow: wrap
-    background: rgba(255, 255, 255, 1)
+    background: $white
     h2
        font-size: 28px
        width: 60%
@@ -86,10 +87,11 @@ main
         font-size: 20px
 
       .btn-save
-        background: rgba(128, 0, 0, 1)
+        background: $secondary
         color: white
         &:hover
-          background: rgba(128, 0, 0, 0.5)
+          background: $secondary
+          opacity: 0.75
           transform: scale(1.05)
 
     .formulario
@@ -101,12 +103,12 @@ main
 
       h5
         width: 100%
-        color: rgba(128, 0, 0, 1)
+        color: $secondary
         font-size: 16px
       h4
         margin: 15px 0
         width: 100%
-        background: rgba(128, 0, 0, 1)
+        background: $secondary
         font-size: 20px
         padding: 10px
         color: white
@@ -133,13 +135,13 @@ main
           height: 25px
           background: transparent
           border: 0
-          border-bottom: 0.5px solid rgba(0, 0, 0, 0.25)
+          border-bottom: 0.5px solid $border-black
           margin: 15px 0
           font-size: 16px
           &:focus
             outline: none !important
             outline-width: 0 !important
-            border-bottom: 1px solid rgba(128, 0, 0, 0.25)
+            border-bottom: 1px solid $secondary
             overflow: hidden
 
       .lab-documentos
@@ -150,7 +152,7 @@ main
         text-align: center
         color: rgba(0, 0, 0, 0.25)
         cursor: pointer
-        border: 0.5px solid rgba(128, 0, 0, 0.25)
+        border: 0.5px solid $secondary
         border-radius: 15px
         &:hover
           transform: scale(1.03)
@@ -180,10 +182,10 @@ main
       flex-flow: column wrap
       align-items: left
       justify-content: flex-start
-      background: rgba(128, 0, 0, 0.8)
+      background: $secondary
       li
         text-align: left
-        color: rgba(255, 255, 255, 1)
+        color: $white
         font-size: 24px
         padding: 18px 25px
         cursor: pointer
