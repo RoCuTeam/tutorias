@@ -1,0 +1,66 @@
+.btn {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: black;
+  margin: 20px auto; }
+  .btn:hover {
+    transform: scale(1.05); }
+
+.primary {
+  background: lime;
+  color: white; }
+  .primary:hover {
+    opacity: 0.75; }
+
+.secondary {
+  background: maroon;
+  color: white; }
+  .secondary:hover {
+    opacity: 0.75; }
+
+.perfil {
+  width: 60%;
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap; }
+  .perfil h2 {
+    padding: 25px;
+    text-align: center;
+    width: 100%; }
+  .perfil label {
+    width: 30%; }
+  .perfil input {
+    width: 70%;
+    margin: 5px 0;
+    padding: 5px 10px; }
+
+.universidad {
+  width: 60%;
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap; }
+  .universidad h2 {
+    padding: 25px;
+    text-align: center;
+    width: 100%; }
+  .universidad label {
+    width: 30%; }
+  .universidad input {
+    width: 70%;
+    margin: 5px 0;
+    padding: 5px 10px; }
+
+.control {
+  width: 100%; }
+  .control button {
+    margin: 25px 20%; }
