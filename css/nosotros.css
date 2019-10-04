@@ -35,7 +35,7 @@ main {
     justify-content: space-between; }
     main .anuies img {
       width: 15%;
-      margin: 5%; }
+      margin: 0% 5%; }
     main .anuies article {
       width: 60%;
       padding: 25px;
@@ -48,4 +48,21 @@ main {
       main .anuies article p {
         padding: 25px 50px;
         line-height: 24px;
-        font-size: 18px; }
+        font-size: 20px; }
+  main .nosotros {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between; }
+    main .nosotros article {
+      width: 60%;
+      padding: 25px;
+      text-align: justify;
+      margin: 0 665px; }
+    main .nosotros h2 {
+      font-size: 48px;
+      text-align: center;
+      color: maroon; }
+    main .nosotros p {
+      padding: 25px 50px;
+      line-height: 24px;
+      font-size: 20px; }
