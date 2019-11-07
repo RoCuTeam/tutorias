@@ -1,0 +1,46 @@
+@import botones
+
+footer
+  position: relative
+  z-index: 1000
+  bottom: 0
+  width: 100%
+  height: 150px
+  background: $oscuro-footer
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+  padding: 25px
+  .logo
+    width: 35%
+    height: 100%
+    background-size: contain
+    background-position: center
+    background-repeat: no-repeat
+  .identidad
+    width: 65%
+    height: 100%
+    color: rgba(255, 255, 255, 0.85)
+    .contacto
+      display: flex
+      flex-flow: column wrap
+      justify-content: center
+      align-items: center
+      padding: 10px
+      border-bottom: 1px solid rgba(255, 255, 255, 0.75)
+      .contacto-info
+        width: 100%
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-between
+        align-items: center
+        padding: 10px
+        list-style: none
+        li
+          list-style: none
+    .legal
+      display: flex
+      flex-flow: row wrap
+      justify-content: center
+      align-items: center
+      padding: 10px
