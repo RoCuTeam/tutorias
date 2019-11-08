@@ -1,4 +1,5 @@
 @import botones
+@import footer
 
 *
   margin: 0
@@ -9,7 +10,7 @@ body
   font-size: 14px
   font-family: sans-serif
   text-align: justify
-  background: $secondary
+  background: $primary
 
 header
   position: fixed
@@ -53,7 +54,7 @@ main
   flex-flow: wrap
   //height: 1000px
   .contenido
-    width: 80%
+    width: 100%
     display: flex
     justify-content: space-between
     flex-flow: wrap
@@ -77,12 +78,25 @@ main
         span
           font-style: italic
 
-      .descripcion
-        text-align: justify
-        font-weight: bold
-        font-size: 16px
-        margin: 0% 0%
-        color: $secondary
+    .descripcion
+      text-align: justify
+      font-weight: bold
+      font-size: 16px
+      margin: 0% 0%
+      color: $primary
+
+    .global
+      text-align: justify
+      font-weight: bold
+      font-size: 16px
+      margin: 0% 0%
+
+    .cuadro
+      border: 1px solid $primary
+      width: 75%
+      margin: 15px 12.5% 50px 12.5%
+      border-radius: 25px
+      padding: 25px
 
   .menu
     width: 20%
@@ -96,7 +110,7 @@ main
       flex-flow: column wrap
       align-items: left
       justify-content: flex-start
-      background: $secondary
+      background: $primary
       li
         text-align: left
         color: $white
