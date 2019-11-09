@@ -1,0 +1,42 @@
+@import botones
+
+main
+  background: $white
+  min-height: 68vh
+
+  .box
+    width: 90%
+    height: 90%
+    margin: 5%
+
+    .noti
+      width: 1000px
+      height: 60px
+      margin: 25px auto
+      border: 0.5px solid $primary
+      border-radius: 5px
+      display: flex
+      flex-flow: row wrap
+      justify-content: flex-start
+      align-items: center
+      .icon
+        height: 58px
+        width: 58px
+        border-radius: 5px 0 0 5px
+        font-size: 36px
+        color: white
+        display: flex
+        flex-flow: column
+        justify-content: center
+        align-items: center
+      .titulo
+        margin-left: 10px
+        font-size: 14px
+        width: 70%
+      .fecha
+        width: 20%
+        text-align: right
+      .orange
+        background: rgba(226, 63, 6, 1)
+      .green
+        background: rgba(63, 201, 12, 1)
