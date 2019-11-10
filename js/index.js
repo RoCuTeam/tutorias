@@ -22,6 +22,13 @@ function menu(){
 }
 
 function autoEv(){
-  alert("Esta a punto de ingresar al sistema");
   location.href = "autoevaluacion.html";
+}
+
+function visita(){
+  location.href = "infoVisita.html";
+}
+
+function dictamen(){
+  location.href = "resultados.html";
 }
