@@ -141,3 +141,28 @@ main h3 {
 
 main p, main label {
   padding: 25px; }
+
+main .entradas {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 25px; }
+  main .entradas label {
+    width: 50%; }
+  main .entradas .inputs {
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center; }
+    main .entradas .inputs .end {
+      margin-right: 69%; }
+
+.send {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: flex-end; }

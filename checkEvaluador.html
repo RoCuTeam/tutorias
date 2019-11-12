@@ -32,31 +32,44 @@
           <div class="cuadro">
       			<h3>Evaluador</h3>
             <p>Nombre: <span> Fernando Rodriguez Perez </span></p>
+            <div class="entradas">
+              <label for="asistencia">1. Mostró puntualidad: </label>
+              <div class="inputs">
+                <input type="radio" name="asistencia" value="Excelente"> Excelente
+                <input type="radio" name="asistencia" value="Muy bueno"> Muy bueno
+                <input type="radio" name="asistencia" value="Bueno"> Bueno
+                <input type="radio" name="asistencia" value="Regular"> Regular
+                <input type="radio" name="asistencia" value="Malo"> Malo
+              </div>
 
-            <label for="asistencia">Mostró puntualidad: </label>
-            <input type="radio" name="escala" value="Excelente">Excelente
-            <input type="radio" name="escala" value="Muy bueno">Muy bueno
-            <input type="radio" name="escala" value="Bueno">Bueno
-            <input type="radio" name="escala" value="Regular">Regular
-            <input type="radio" name="escala" value="Malo">Malo
+              <label for="respeto">2. Se dirigió respetuosamente en todo momento: </label>
+              <div class="inputs">
+                <input type="radio" name="respeto" value="Excelente"> Excelente
+                <input type="radio" name="respeto" value="Muy bueno"> Muy bueno
+                <input type="radio" name="respeto" value="Bueno"> Bueno
+                <input type="radio" name="respeto" value="Regular"> Regular
+                <input type="radio" name="respeto" value="Malo"> Malo
+              </div>
 
-            <br><label for="respeto">Se dirigió respetuosamente en todo momento: </label>
-            <input type="radio" name="escala" value="Excelente">Excelente
-            <input type="radio" name="escala" value="Muy bueno">Muy bueno
-            <input type="radio" name="escala" value="Bueno">Bueno
-            <input type="radio" name="escala" value="Regular">Regular
-            <input type="radio" name="escala" value="Malo">Malo
+              <label for="identificacion">3. Mostró y portó su identificación en todo momento: </label>
+              <div class="inputs">
+                <span><input type="radio" name="identificacion" value="Si" text="SI">Si</span>
+                <span class="end"><input type="radio" name="identificacion" value="No"> No</span>
+              </div>
 
-            <br><label for="identificacion">Mostró y portó su identificación en todo momento: </label>
-            <input type="radio" name="escala" value="Si">Si
-            <input type="radio" name="escala" value="No">No
+              <label for="atencion">4. Prestó atención durante la visita: </label>
+              <div class="inputs">
+                <input type="radio" name="atencion" value="Excelente"> Excelente
+                <input type="radio" name="atencion" value="Muy bueno"> Muy bueno
+                <input type="radio" name="atencion" value="Bueno"> Bueno
+                <input type="radio" name="atencion" value="Regular"> Regular
+                <input type="radio" name="atencion" value="Malo"> Malo
+              </div>
+            </div>
+          </div>
 
-            <br><label for="respeto">Prestó atención durante la visita: </label>
-            <input type="radio" name="escala" value="Excelente">Excelente
-            <input type="radio" name="escala" value="Muy bueno">Muy bueno
-            <input type="radio" name="escala" value="Bueno">Bueno
-            <input type="radio" name="escala" value="Regular">Regular
-            <input type="radio" name="escala" value="Malo">Malo
+          <div class="send">
+            <button class="btn primary" type="button" name="button">Enviar</button>
           </div>
 
         </section>

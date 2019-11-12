@@ -32,3 +32,7 @@ function visita(){
 function dictamen(){
   location.href = "resultados.html";
 }
+
+function checkEvaluador(){
+  location.href = "checkEvaluador.html";
+}
