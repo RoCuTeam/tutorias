@@ -72,11 +72,10 @@ main
       margin: 25px 25%
 
     .botones-save
-      width: 80%
-      margin: 0 10%
+      width: 100%
       display: flex
       flex-flow: row wrap
-      justify-content: flex-end
+      justify-content: flex-start
       .btn
         width: 150px
         height: 50px
@@ -93,11 +92,14 @@ main
       .btn-aprobar
         background: $primary
         color: white
-        margin: 0 0 15px 0%
+        margin: 15px 15px 15px 0
         &:hover
           background: $primary
           opacity: 0.75
           transform: scale(1.05)
+      .razon
+        width: 40%
+        margin: 15px
 
     .botones-documento
           width: 100%
@@ -124,7 +126,8 @@ main
       display: flex
       flex-flow: wrap
       justify-content: space-between
-
+      p
+        font-size: 18px
       h5
         width: 100%
         color: $primary
