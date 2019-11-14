@@ -13,7 +13,7 @@ function login (){
 }
 
 function menu(){
-  var opcion = confirm("Esta a punto de ingresar al sistema");
+  var opcion = confirm("Está a punto de ingresar al sistema");
     if (opcion == true) {
         location.href = "home.html";
 	} else {
