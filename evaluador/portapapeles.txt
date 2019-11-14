@@ -1,0 +1,3 @@
+  cont += "          <textarea class=\"comentario\" name=\"comentario\" id=\"1.1.a.1\" placeholder=\"Agregar Comentario...\"></textarea>";
+  cont += "          <label for=\"1.1.a.1\" class=\"otroComent\">Escriba una respuesta </label>";
+  cont += "          <textarea class=\"comentario\" name=\"comentario\" id=\"1.1.a.1\" placeholder=\"Escriba una respuesta...\"></textarea>";

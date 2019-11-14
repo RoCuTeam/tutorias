@@ -1,0 +1,287 @@
+@import botones
+@import footer
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  font-size: 14px
+  font-family: sans-serif
+  text-align: justify
+
+header
+  position: fixed
+  width: 100%
+  height: 60px
+  background: $black-bg
+
+  nav
+    position: absolute
+    width: 100%
+    height: 60px
+    bottom: 0%
+    background: $black-bg
+
+
+    ul
+      list-style: none
+      display: flex
+      justify-content: flex-end
+
+      a
+        text-decoration: none
+        height: 60px
+
+        li
+          text-align: center
+          color: $white
+          font-size: 24px
+          padding: 18px 25px
+          cursor: pointer
+
+.spacer
+  width: 100%
+  height: 60px
+
+main
+  display: flex
+  justify-content: space-between
+  flex-flow: wrap
+  background: $primary
+  .contenido
+    width: 80%
+    display: flex
+    justify-content: space-between
+    flex-flow: wrap
+    background: $white
+    h2
+       font-size: 28px
+       width: 60%
+       max-height: 50px
+       margin: 25px 20%
+       text-align: center
+    article
+      width: 80%
+      margin: 25px 10%
+      p
+        margin: 15px
+    img
+      width: 50%
+      margin: 25px 25%
+
+    .botones-save
+      width: 80%
+      margin: 0 10%
+      display: flex
+      flex-flow: row wrap
+      justify-content: flex-end
+      .btn
+        width: 150px
+        height: 50px
+        margin: 15px 0
+        padding: auto
+        font-size: 20px
+      .btn-save
+        background: $primary
+        color: white
+        &:hover
+          background: $primary
+          opacity: 0.75
+          transform: scale(1.05)
+
+    .botones-documento
+          width: 100%
+          margin: 0 10%
+          display: flex
+          flex-flow: row wrap
+          justify-content: flex-end
+          .btn
+            width: 200px
+            height: 50px
+            padding: auto
+
+          .btn-doc
+            background: $white
+            color: $primary
+            &:hover
+              background: $white
+              opacity: 0.80
+              transform: scale(1.05)
+
+    .formulario
+      width: 80%
+      margin: 25px 10%
+      display: flex
+      flex-flow: wrap
+      justify-content: space-between
+
+      h5
+        width: 100%
+        color: $primary
+        font-size: 16px
+      h4
+        margin: 15px 0
+        width: 100%
+        background: $primary
+        font-size: 20px
+        padding: 10px
+        color: white
+
+      //RESPUESTA A LA PREGUNTA
+      .respuesta
+        width: 60%
+        font-size: 16px
+        text-align: justify
+        margin: 15px 0 15px 0
+        padding: 0 10px 0 10px
+
+      //ETIQUETA COMENTARIO
+      .etiquetaComent
+        width: 58%
+        font-size: 16px
+        text-align: justify
+        margin: 0 0 15px 40%
+        font-style: italic
+        color: $text-coment
+
+      //ETIQUETA RESPUESTA
+      .etiquetaResp
+        width: 54%
+        font-size: 14px
+        text-align: justify
+        margin: 0 0 15px 45%
+        font-style: italic
+        color: $text-coment
+
+      //EJEMPLO COMENTARIO
+      .comentarioEjem
+        width: 58%
+        padding: 10px 0 10px 8px
+        font-size: 16px
+        text-align: justify
+        margin: 0px 0 15px 41%
+        color: $black-bg
+        border: $border-primary 2px solid
+
+      //EJEMPLO RESPUESTA
+      .respuestaEjem
+        width: 54%
+        padding: 10px 0 10px 8px
+        font-size: 14px
+        text-align: justify
+        margin: 0px 0 15px 45%
+        color: $black-bg
+        border: $border-primary 2px solid
+
+      //LABEL PREGUNTA
+      label
+        padding: 0 10px 0 10px
+        width: 35%
+        font-size: 16px
+        text-align: justify
+        margin: 15px 0 5px 0
+
+      textarea
+        min-height: 50px
+        max-height: 250px
+        min-width: 58%
+        max-width: 58%
+        background: $white
+        margin: 15px 1% 15px 0
+        font-size: 14px
+        padding: 5px
+        color: black
+        text-align: justify
+
+      //CUADRO COMENTARIO
+      .comentario
+        min-height: 50px
+        max-height: 250px
+        min-width: 58%
+        max-width: 58%
+        background: $white
+        //margin: 0px 0 0 41%
+        margin: 0px 0 15px 41%
+        font-size: 14px
+        padding: 5px
+        color: black
+        text-align: justify
+
+      //CUADRO RESPUESTA
+      .comentarioResp
+        min-height: 50px
+        max-height: 250px
+        min-width: 54%
+        max-width: 54%
+        background: $white
+        //margin: 0px 0 0 41%
+        margin: 0px 0 15px 45%
+        font-size: 12px
+        padding: 5px
+        color: black
+        text-align: justify
+
+      input
+        &[type="number"]
+          text-align: right
+          padding: 5px
+          width: 20%
+          height: 25px
+          background: transparent
+          border: 0
+          border-bottom: 0.5px solid $border-black
+          margin: 15px 0
+          font-size: 16px
+          &:focus
+            outline: none !important
+            outline-width: 0 !important
+            border-bottom: 1px solid $primary
+            overflow: hidden
+
+      .lab-documentos
+        width: 80%
+        margin: 25px auto
+        padding: 25px
+        font-size: 24px
+        text-align: center
+        color: rgba(0, 0, 0, 0.25)
+        cursor: pointer
+        border: 0.5px solid $primary
+        border-radius: 15px
+        &:hover
+          transform: scale(1.03)
+      .documentos
+        display: none
+      select
+        padding: 5px
+        width: 65%
+        background: transparent
+        margin: 15px 0
+        font-size: 16px
+      .complemento
+        padding: 5px
+        width: 45%
+        margin: 15px 0
+        font-size: 16px
+
+  .menu
+    width: 20%
+    height: 100%
+    ul
+      width: 20%
+      margin: 0 auto
+      position: fixed
+      list-style: none
+      display: flex
+      flex-flow: column wrap
+      align-items: left
+      justify-content: flex-start
+      background: $primary
+      li
+        text-align: left
+        color: $white
+        font-size: 18px
+        padding: 18px 25px
+        cursor: pointer

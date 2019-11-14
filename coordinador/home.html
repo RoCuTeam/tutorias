@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+  	<meta charset="utf-8">
+  	<link rel="shortcut icon" href="img/logo.png">
+  	<title>Responsable</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script type="text/javascript" src="js/index.js"></script>
+  </head>
+  <body>
+
+    <header>
+  		<div class="banner" style="background-image: url('img/banner.jpg')">
+  			<div class="over-banner"></div>
+  			<div class="over-content" id="over-content"></div>
+  			<nav>
+  				<ul>
+            <a href="notificacionResponsable.html"> <li><i class="far fa-bell"></i></li> </a>
+            <a href="index.html"> <li>Salir</li> </a>
+  				</ul>
+  			</nav>
+  		</div>
+  	</header>
+
+  	<main>
+      <section class="perfil">
+        <div class="perfil-usuario">
+          <div class="logo" style="background-image: url('img/avatar.png')"></div>
+          <p>
+            <span class="titulo">Perfil del usuario</span>
+            <span class="dato">Nombre: </span><span class="valor">Luis Angel</span><br>
+            <span class="dato">Apellidos: </span><span class="valor">Arellano Ruiz</span><br>
+            <span class="dato">Correo: </span><span class="valor">luis_arellano@hotmail.com</span><br>
+            <span class="dato">Teléfono oficina: </span><span class="valor">3336201020</span><br>
+            <span class="dato">Número de extensión: </span><span class="valor">254</span><br>
+            <span class="dato">Teléfono celular: </span><span class="valor">3313664304</span><br>
+            <span class="dato">Titulo: </span><span class="valor">Responsable de tutorías de UTJ</span><br>
+
+            <button class="btn primary" type="button" name="button" onclick="location.href = 'perfil.html';">Editar</button>
+          </p>
+        </div>
+        <hr>
+        <div class="perfil-uni">
+          <div class="logo" style="background-image: url('img/utj mini.png')"></div>
+          <p>
+            <span class="titulo">Perfil de la universidad</span>
+            <span class="dato">Nombre:        </span><span class="valor">Universidad Tecnológica de Jalisco</span><br>
+            <span class="dato">Ciudad:        </span><span class="valor">Guadalajara</span><br>
+            <span class="dato">Estado:        </span><span class="valor">Jalisco</span><br>
+            <span class="dato">Dirección:     </span><span class="valor">Luis J. Jiménez 577</span><br>
+            <span class="dato">Colonia:       </span><span class="valor">1o. de Mayo</span></br>
+            <span class="dato">Página web:    </span><span class="valor">www.utj.edu.mx</span><br>
+            <span class="dato">Teléfono:      </span><span class="valor">3330300900</span>
+
+            <button class="btn primary" type="button" name="button" onclick="location.href = 'perfil.html';">Editar</button>
+          </p>
+        </div>
+      </section>
+
+      <section class="tramite">
+        <div class="logo" style="background-image: url('img/registro.png')"></div>
+        <article class="">
+          <h3 class="titulo">Registro</h3>
+          <p>Iniciar tu proceso de registro para la evaluación de tu programa de tutorias</p>
+          <ul>
+            <li><span class="dato">Estado:</span>          <span class="valor">Iniciado</span></li>
+            <li><span class="dato">Fecha de inicio:</span> <span class="valor">10 / 11 / 2019</span></li>
+            <li><span class="dato">Fecha limite:</span>    <span class="valor">10 / 12 / 2019</span></li>
+            <li><span class="dato">Progreso: </span>       <span class="valor">50%</span></li>
+          </ul>
+          <button class="btn primary" type="button" name="button" onclick="autoEv()" href="autoevaluacion.html">Autoevaluación</button>
+
+          <h3 class="titulo">Información de la visita</h3>
+          <ul>
+            <li><span class="dato">Fecha de inicio:</span> <span class="valor">15 / 02 / 2020</span></li>
+            <li><span class="dato">Fecha limite:</span>    <span class="valor">20 / 02 / 2020</span></li>
+          </ul>
+          <button class="btn primary" type="button" name="button" onclick="visita()" href="infoVisita.html">Visita</button>
+
+          <h3 class="titulo">Resultados del dictamen</h3>
+          <button class="btn primary" type="button" name="button" onclick="dictamen()" href="resultados.html">Dictamen</button>
+
+          <h3 class="titulo">Retroalimentación a evaluadores</h3>
+          <button class="btn primary" type="button" name="button" onclick="checkEvaluador()" href="checkEvaluador.html">Evaluar</button>
+        </article>
+      </section>
+
+    </main>
+
+  	<footer>
+      <div class="logo" style="background-image: url('img/utj.png')">
+      </div>
+      <div class="identidad">
+        <div class="contacto">
+          <h5>Contacto</h5>
+          <ul class="contacto-info">
+            <li>Teléfono: 01-800-1234-1234</li>
+            <li>Email: contacto@utj.com</li>
+          </ul>
+        </div>
+        <div class="legal">
+          <small>Universidad Tecnológica de Jalisco <b>2019</b> | Todos los derechos reservados</small>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
