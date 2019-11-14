@@ -213,11 +213,41 @@ main {
     main .contenido img {
       width: 50%;
       margin: 25px 25%; }
-    main .contenido .botones-save {
+    main .contenido .botones-apr {
       width: 100%;
       display: flex;
       flex-flow: row wrap;
       justify-content: flex-start; }
+      main .contenido .botones-apr .btn {
+        width: 150px;
+        height: 50px;
+        margin: 15px 0;
+        padding: auto;
+        font-size: 20px; }
+      main .contenido .botones-apr .btn-save {
+        background: #750000;
+        color: white; }
+        main .contenido .botones-apr .btn-save:hover {
+          background: #750000;
+          opacity: 0.75;
+          transform: scale(1.05); }
+      main .contenido .botones-apr .btn-aprobar {
+        background: #750000;
+        color: white;
+        margin: 15px 15px 15px 0; }
+        main .contenido .botones-apr .btn-aprobar:hover {
+          background: #750000;
+          opacity: 0.75;
+          transform: scale(1.05); }
+      main .contenido .botones-apr .razon {
+        width: 40%;
+        margin: 15px; }
+    main .contenido .botones-save {
+      width: 100%;
+      margin: 0 10%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-end; }
       main .contenido .botones-save .btn {
         width: 150px;
         height: 50px;

@@ -70,12 +70,41 @@ main
     img
       width: 50%
       margin: 25px 25%
-
-    .botones-save
+    .botones-apr
       width: 100%
       display: flex
       flex-flow: row wrap
       justify-content: flex-start
+      .btn
+        width: 150px
+        height: 50px
+        margin: 15px 0
+        padding: auto
+        font-size: 20px
+      .btn-save
+        background: $primary
+        color: white
+        &:hover
+          background: $primary
+          opacity: 0.75
+          transform: scale(1.05)
+      .btn-aprobar
+        background: $primary
+        color: white
+        margin: 15px 15px 15px 0
+        &:hover
+          background: $primary
+          opacity: 0.75
+          transform: scale(1.05)
+      .razon
+        width: 40%
+        margin: 15px
+    .botones-save
+      width: 100%
+      margin: 0 10%
+      display: flex
+      flex-flow: row wrap
+      justify-content: flex-end
       .btn
         width: 150px
         height: 50px
