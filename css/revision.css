@@ -1,0 +1,352 @@
+.btn {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: black;
+  margin: 20px auto; }
+  .btn:hover {
+    transform: scale(1.05); }
+
+.primary {
+  background: #750000;
+  color: white; }
+  .primary:hover {
+    opacity: 0.75; }
+
+.secondary {
+  background: #750000;
+  color: white; }
+  .secondary:hover {
+    opacity: 0.75; }
+
+.btn {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: black;
+  margin: 20px auto; }
+  .btn:hover {
+    transform: scale(1.05); }
+
+.primary {
+  background: #750000;
+  color: white; }
+  .primary:hover {
+    opacity: 0.75; }
+
+.secondary {
+  background: #750000;
+  color: white; }
+  .secondary:hover {
+    opacity: 0.75; }
+
+footer {
+  position: relative;
+  z-index: 1000;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background: #2b2929;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 25px; }
+  footer .logo {
+    width: 35%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+  footer .identidad {
+    width: 65%;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.85); }
+    footer .identidad .contacto {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.75); }
+      footer .identidad .contacto .contacto-info {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        list-style: none; }
+        footer .identidad .contacto .contacto-info li {
+          list-style: none; }
+    footer .identidad .legal {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 10px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 14px;
+  font-family: sans-serif;
+  text-align: justify; }
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.75); }
+  header nav {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: 0%;
+    background: rgba(0, 0, 0, 0.75); }
+    header nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end; }
+      header nav ul a {
+        text-decoration: none;
+        height: 60px; }
+        header nav ul a li {
+          text-align: center;
+          color: white;
+          font-size: 24px;
+          padding: 18px 25px;
+          cursor: pointer; }
+
+.spacer {
+  width: 100%;
+  height: 60px; }
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  background: #750000; }
+  main .contenido {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    background: white; }
+    main .contenido h2 {
+      font-size: 28px;
+      width: 60%;
+      max-height: 50px;
+      margin: 25px 20%;
+      text-align: center; }
+    main .contenido article {
+      width: 80%;
+      margin: 25px 10%; }
+      main .contenido article p {
+        margin: 15px; }
+    main .contenido img {
+      width: 50%;
+      margin: 25px 25%; }
+    main .contenido .botones-save {
+      width: 80%;
+      margin: 0 10%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-end; }
+      main .contenido .botones-save .btn {
+        width: 150px;
+        height: 50px;
+        margin: 15px 0;
+        padding: auto;
+        font-size: 20px; }
+      main .contenido .botones-save .btn-save {
+        background: #750000;
+        color: white; }
+        main .contenido .botones-save .btn-save:hover {
+          background: #750000;
+          opacity: 0.75;
+          transform: scale(1.05); }
+    main .contenido .botones-documento {
+      width: 100%;
+      margin: 0 10%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-end; }
+      main .contenido .botones-documento .btn {
+        width: 200px;
+        height: 50px;
+        padding: auto; }
+      main .contenido .botones-documento .btn-doc {
+        background: white;
+        color: #750000; }
+        main .contenido .botones-documento .btn-doc:hover {
+          background: white;
+          opacity: 0.80;
+          transform: scale(1.05); }
+    main .contenido .formulario {
+      width: 80%;
+      margin: 25px 10%;
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-between; }
+      main .contenido .formulario h5 {
+        width: 100%;
+        color: #750000;
+        font-size: 16px; }
+      main .contenido .formulario h4 {
+        margin: 15px 0;
+        width: 100%;
+        background: #750000;
+        font-size: 20px;
+        padding: 10px;
+        color: white; }
+      main .contenido .formulario .respuesta {
+        width: 60%;
+        font-size: 16px;
+        text-align: justify;
+        margin: 15px 0 15px 0;
+        padding: 0 10px 0 10px; }
+      main .contenido .formulario .etiquetaComent {
+        width: 58%;
+        font-size: 16px;
+        text-align: justify;
+        margin: 0 0 15px 40%;
+        font-style: italic;
+        color: rgba(117, 0, 0, 0.75); }
+      main .contenido .formulario .etiquetaResp {
+        width: 54%;
+        font-size: 14px;
+        text-align: justify;
+        margin: 0 0 15px 45%;
+        font-style: italic;
+        color: rgba(117, 0, 0, 0.75); }
+      main .contenido .formulario .comentarioEjem {
+        width: 58%;
+        padding: 10px 0 10px 8px;
+        font-size: 16px;
+        text-align: justify;
+        margin: 0px 0 15px 41%;
+        color: rgba(0, 0, 0, 0.75);
+        border: rgba(117, 0, 0, 0.5) 2px solid; }
+      main .contenido .formulario .respuestaEjem {
+        width: 54%;
+        padding: 10px 0 10px 8px;
+        font-size: 14px;
+        text-align: justify;
+        margin: 0px 0 15px 45%;
+        color: rgba(0, 0, 0, 0.75);
+        border: rgba(117, 0, 0, 0.5) 2px solid; }
+      main .contenido .formulario label {
+        padding: 0 10px 0 10px;
+        width: 35%;
+        font-size: 16px;
+        text-align: justify;
+        margin: 15px 0 5px 0; }
+      main .contenido .formulario textarea {
+        min-height: 50px;
+        max-height: 250px;
+        min-width: 58%;
+        max-width: 58%;
+        background: white;
+        margin: 15px 1% 15px 0;
+        font-size: 14px;
+        padding: 5px;
+        color: black;
+        text-align: justify; }
+      main .contenido .formulario .comentario {
+        min-height: 50px;
+        max-height: 250px;
+        min-width: 58%;
+        max-width: 58%;
+        background: white;
+        margin: 0px 0 15px 41%;
+        font-size: 14px;
+        padding: 5px;
+        color: black;
+        text-align: justify; }
+      main .contenido .formulario .comentarioResp {
+        min-height: 50px;
+        max-height: 250px;
+        min-width: 54%;
+        max-width: 54%;
+        background: white;
+        margin: 0px 0 15px 45%;
+        font-size: 12px;
+        padding: 5px;
+        color: black;
+        text-align: justify; }
+      main .contenido .formulario input[type="number"] {
+        text-align: right;
+        padding: 5px;
+        width: 20%;
+        height: 25px;
+        background: transparent;
+        border: 0;
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.25);
+        margin: 15px 0;
+        font-size: 16px; }
+        main .contenido .formulario input[type="number"]:focus {
+          outline: none !important;
+          outline-width: 0 !important;
+          border-bottom: 1px solid #750000;
+          overflow: hidden; }
+      main .contenido .formulario .lab-documentos {
+        width: 80%;
+        margin: 25px auto;
+        padding: 25px;
+        font-size: 24px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        border: 0.5px solid #750000;
+        border-radius: 15px; }
+        main .contenido .formulario .lab-documentos:hover {
+          transform: scale(1.03); }
+      main .contenido .formulario .documentos {
+        display: none; }
+      main .contenido .formulario select {
+        padding: 5px;
+        width: 65%;
+        background: transparent;
+        margin: 15px 0;
+        font-size: 16px; }
+      main .contenido .formulario .complemento {
+        padding: 5px;
+        width: 45%;
+        margin: 15px 0;
+        font-size: 16px; }
+  main .menu {
+    width: 20%;
+    height: 100%; }
+    main .menu ul {
+      width: 20%;
+      margin: 0 auto;
+      position: fixed;
+      list-style: none;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: left;
+      justify-content: flex-start;
+      background: #750000; }
+      main .menu ul li {
+        text-align: left;
+        color: white;
+        font-size: 18px;
+        padding: 18px 25px;
+        cursor: pointer; }
