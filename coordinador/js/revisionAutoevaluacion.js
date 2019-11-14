@@ -16,6 +16,15 @@ function presentacion(){
                 '</p>'+
               '</article>'+
               '<img src="../img/ejes.png" alt="Ejes autoevaluación PIT" title="Ejes autoevaluacion PIT" width="500px" height="auto">';
+  cont += "        <section class=\"formulario\" id=\"formularioAprobar\">";
+  cont += "          <h4>Aprobar Autoevaluación para habilitar Revisión</h4>";
+  cont += "          <p for=\"descripcion\" class=\"descripcion\">Decidir si la Autoevaluación puede pasar a Revisión.</p>";
+  cont += "         <div class=\"botones-save\">";
+  cont += "          <button type=\"button\" name=\"button\" class=\"btn btn-aprobar\"> Aprobar</button>";
+  cont += "          <button type=\"button\" name=\"button\" class=\"btn btn-aprobar\"> No Aprobar</button>";
+  cont += "          <textarea class=\"razon\" name=\"comentario\" placeholder=\"Razones...\"></textarea>";
+  cont += "         </div>";
+  cont += "        </section>";
 
   var contenido = document.getElementById("contenido");
   contenido.innerHTML = cont;
@@ -211,17 +220,6 @@ function eje2(){
   cont += "        <div class=\"botones-save\">";
   cont += "          <button type=\"button\" name=\"button\" class=\"btn btn-save\"><i class=\"fas fa-save\"></i> Guardar</button>";
   cont += "        </div>";
-  cont += "        <section class=\"formulario\" id=\"formularioAprobar\">";
-  cont += "          <h4>Aprobar Autoevaluación para habilitar Revisión</h4>";
-  cont += "          <label for=\"descripcion\" class=\"descripcion\">Decidir si la Autoevaluación puede pasar a Revisión.</label>";
-  cont += "         <div class=\"botones-save\">";
-  cont += "           <button type=\"button\" name=\"button\" class=\"btn btn-aprobar\"> Aprobar</button>";
-  cont += "         </div>";
-  cont += "         <div class=\"botones-save\">";
-  cont += "          <button type=\"button\" name=\"button\" class=\"btn btn-aprobar\"> No Aprobar</button>";
-  cont += "         </div>";
-  cont += "         <textarea class=\"comentario\" name=\"comentario\" placeholder=\"Razones...\"></textarea>";
-  cont += "        </section>";
 
   var contenido = document.getElementById("contenido");
   contenido.innerHTML = cont;
