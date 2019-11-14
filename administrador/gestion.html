@@ -36,17 +36,17 @@
 
         <div class="cuadro">
           <h3>Ajustes de Autoevaluación </h3><br>
-          <p>La Autoevaluación es el autoestudio que realiza el Responsable del Programa Institucional de Tutorías de cada Institución.</p>
+          <p>La autoevaluación es el autoestudio que realiza el responsable del Programa Institucional de Tutorías de cada institución.</p>
 
-          <h4>Asignar plazo</h4>
-          <p>Modifique el período de tiempo de captura para que el Resposable del PIT complete el formulario de Autoevaluación </p>
+          <h4>Asignar Plazo</h4>
+          <p>Modifique el período de tiempo de captura para que el resposable del PIT complete el formulario de autoevaluación. </p>
           <label for="fechaInicio">Fecha de Inicio: </label>
           <input type="date" name="fechaInicio" value=""><br>
           <label for="fechaFin">Fecha de Cierre: </label>
           <input type="date" name="fechaFin" value=""><br>
 
           <h4>Seleccionar versión del formulario</h4>
-          <p>Seleccione la versión deseada del formulario de Autoevaluación según la Instución de Educación Superior</p>
+          <p>Seleccione la versión deseada del formulario de Autoevaluación, según la Instución de Educación Superior.</p>
           <select class="selectVersion" name="version">
             <option value="0"> Seleccionar</option>
             <option value="version1">Versión 1</option>
@@ -58,10 +58,11 @@
 
         <div class="cuadro">
           <h3>Primera Revisión de Autoevaluaciones</h3><br>
-          <p>Seleccione la Autoevaluación que desea verificar, para después habilitar la Revisión de la misma a los evaluadores. </p>
+          <p>Seleccione la Autoevaluación que desea verificar, para después habilitar la revisión de la misma a los evaluadores. </p>
           <div class="verAutoevaluacion">
             <label for="autoevaluacion1" class="verificar">Autoevaluación perteneciente a la Universidad Tecnólogica de Jalisco</label>
-            <button class="btn tertiary" type="button" name="button">Ver</button>
+            <!--button class="btn tertiary" type="button" name="button">Ver</button-->
+            <a class="btn tertiary" href="revisionAutoevaluacion.html">Ver</a>
           </div>
           <input type="checkbox" name="verAutoevaluacion" value="1"> Aprobar
           <textarea class="comentario" name="comentario" placeholder="Observaciones por corregir..."></textarea>
@@ -69,7 +70,7 @@
 
         <div class="cuadro">
           <h3>Ajustes del proceso de Revisión a Autoevaluación</h3><br>
-          <p>La Revisión de la Autoevaluación es el proceso en el cuál cada uno de los evaluadores analiza el autoestudio de la IES.</p>
+          <p>La revisión de la autoevaluación es el proceso en el cuál cada uno de los evaluadores analiza el autoestudio de la IES.</p>
 
           <h4>Asignar Evaluadores a proceso de Revisión</h4>
           <p>Seleccione al evaluador líder, que es el encargado de supervisar a los demás evaluadores.</p>
@@ -82,7 +83,7 @@
             <option value="evaluador5">Ricardo Jiménez Mendoza</option>
             <option value="evaluador6">Gerardo Ríos Sánchez</option>
           </select>
-          <p>Seleccione los evaluadores que revisarán la Autoevaluación y realizarán la Visita de Pares.</p>
+          <p>Seleccione los evaluadores que revisarán la autoevaluación y realizarán la Visita de pares.</p>
           <input type="checkbox" name="evaluador1" value="1"> Fernando Rodríguez Pérez<br>
           <input type="checkbox" name="evaluador2" value="2"> Veronica Márquez Bugarin<br>
           <input type="checkbox" name="evaluador3" value="3"> Alberto Flores Camino<br>
@@ -90,8 +91,8 @@
           <input type="checkbox" name="evaluador3" value="5"> Ricardo Jiménez Mendoza<br>
           <input type="checkbox" name="evaluador3" value="6"> Gerardo Ríos Sánchez<br>
 
-          <h4>Asignar plazo</h4>
-          <p>Modifique el período de tiempo de captura para que el Resposable del PIT complete el formulario de Autoevaluación </p>
+          <h4>Asignar Plazo</h4>
+          <p>Modifique el período de tiempo de captura para que el resposable del PIT complete el formulario de autoevaluación. </p>
           <label for="fechaInicio">Fecha de Inicio: </label>
           <input type="date" name="fechaInicio" value=""><br>
           <label for="fechaFin">Fecha de Cierre: </label>
@@ -102,24 +103,33 @@
 
         <div class="cuadro">
           <h3>Confirmación de Revisión de la Autoevaluación</h3><br>
-          <p>Seleccione la Revisión que desea verificar, para después habilitar la Visita de la misma. </p>
+          <p>Seleccione la Revisión que desea verificar, para después habilitar la visita de pares de la misma. </p>
           <div class="verAutoevaluacion">
-            <label for="revision1" class="verificar">Revisión de la Autoevaluación perteneciente a la Universidad Tecnólogica de Jalisco</label>
-            <button class="btn tertiary" type="button" name="button">Ver</button>
+            <label for="revision1" class="verificar">Revisión de la autoevaluación perteneciente a la Universidad Tecnólogica de Jalisco</label>
+            <!--button class="btn tertiary" type="button" name="button">Ver</button-->
+            <a class="btn tertiary" href="revisionAutoevaluacion.html">Ver</a>
           </div>
           <input type="checkbox" name="verRevision" value="1"> Aprobar
           <textarea name="comentario" class="comentario" placeholder="Observaciones por corregir"></textarea>
         </div>
 
         <div class="cuadro">
-          <h3>Ajustes de Visita</h3><br>
-          <p>Determine la fecha y hora de la Visita de Pares:</p>
-          <label for="fecha">Fecha</label>
+          <h3>Ajustes de Visita de pares</h3><br>
+          <p>Determine la fecha y hora de la visita de pares:</p>
+          <label for="fecha">Fecha: </label>
           <input type="date" name="fecha" value=""><br>
           <label for="hora">Hora de inicio: </label>
           <input type="time" name="hora" value=""><br>
         </div>
 
+        <div class="cuadro">
+          <h3>Ajustes del Reporte Final de Integración</h3><br>
+          <p>Modifique el período de tiempo de captura del Reporte Final de Integración correspondiente a la visita de pares. </p>
+          <label for="fechaInicio">Fecha de Inicio: </label>
+          <input type="date" name="fechaInicio" value=""><br>
+          <label for="fechaFin">Fecha de Cierre: </label>
+          <input type="date" name="fechaFin" value=""><br>
+        </div>
       </section>
 
     </main>
@@ -131,8 +141,8 @@
         <div class="contacto">
           <h5>Contacto</h5>
           <ul class="contacto-info">
-            <li>Teléfono: 01-800-1234-1234</li>
-            <li>Email: contacto@utj.com</li>
+            <li>Teléfono: 33 3030 0900</li>
+            <li>E-mail: contacto@utj.com</li>
           </ul>
         </div>
         <div class="legal">
