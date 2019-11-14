@@ -5,11 +5,10 @@
   	<meta charset="utf-8">
   	<link rel="shortcut icon" href="../img/logo.png">
   	<title>Configuración</title>
-    <link rel="stylesheet" href="../css/asignaciones.css">
+    <link rel="stylesheet" href="../css/configuracion.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script type="text/javascript" src="../js/index.js"></script>
   </head>
-  
+
   <body>
     <header>
       <nav>
@@ -23,16 +22,67 @@
 
     <main>
       <div class="newUsuario">
-        <label for="username"></label>
-        <input type="text" name="username" value="" placeholder="Nombre de usuario">
-        <label for="password"></label>
-        <input type="password" name="password" value="" placeholder="Contraseña">
+        <h2>Creación de Usuario</h2>
+        <div class="perfil">
+    			<h3>Datos del usuario</h3>
+    			<label for="nombre">Nombre: </label>
+          <input type="text" name="nombre" value="" placeholder="Nombre">
 
-        <button class="btn primary" type="button" name="button">Crear</button>
+    			<label for="apellido">Apellidos: </label>
+          <input type="text" name="apellido" value="" placeholder="Apellidos">
+
+    			<label for="correo">Correo: </label>
+          <input type="email" name="correo" value="" placeholder="E-Mail">
+
+          <label for="password">Contraseña: </label>
+          <input type="password" name="password" value="" placeholder="Contraseña">
+
+    			<label for="passwordConf">Confirmar Contraseña: </label>
+          <input type="password" name="passwordConf" value="" placeholder="Confirmar Contraseña">
+        </div>
+
+    		<div class="universidad">
+    			<h3>Datos de la universidad</h3>
+    			<label for="nombreU">Nombre de la universidad: </label>
+          <input type="text" name="nombreU" value="" placeholder="Universidad">
+
+          <label for="ciudadU">Ciudad: </label>
+          <input type="text" name="ciudadU" value="" placeholder="Ciudad">
+
+          <label for="estadoU">Estado: </label>
+          <input type="text" name="estadoU" value="" placeholder="Estado">
+    		</div>
+
+    		<div class="control">
+    			<button class="btn primary" type="button" name="button">Crear</button>
+    		</div>
+      </div>
+
+      <div class="recover">
+        <h2>Recuperar cuenta de usuario</h2>
+
+        <div class="reset">
+          <label for="resetUser">Usuario </label>
+          <input type="text" name="resetUser" value="" placeholder="Usuario">
+
+          <label for="resetPass">Contraseña </label>
+          <input type="password" name="resetPass" value="" placeholder="Nueva contraseña">
+        </div>
+        <div class="control">
+          <button class="btn primary" type="button" name="button">Reestablecer</button>
+        </div>
       </div>
 
       <div class="chanceUsuario">
+        <h2>Cambio de nivel de usuario</h2>
         <ul>
+          <li>
+            <div class="titulos">
+              <span class="numero">#</span>
+              <span class="nombre">Nombre de usuario</span>
+              <span class="Clase">Tipo de usuario</span>
+            </div>
+          </li>
           <li>
             <div class="usuario">
               <span class="numero">1. </span>
@@ -69,6 +119,121 @@
             </div>
           </li>
         </ul>
+
+        <div class="cambio">
+          <label for="cambioUser">Numero de usuario</label>
+          <input type="number" name="cambioUser" value="" placeholder="0">
+
+          <label for="cambioTipo">Nuevo nivel de usuario</label>
+          <select class="" name="cambioTipo">
+            <option value="Responsable">Responsable</option>
+            <option value="Evaluador">Evaluador</option>
+            <option value="Administrador">Administrador</option>
+          </select>
+        </div>
+
+        <div class="control">
+          <button class="btn primary" type="button" name="button">Guardar</button>
+        </div>
+      </div>
+
+      <div class="chancePermiso">
+        <h2>Cambio de nivel de usuario</h2>
+
+        <ul>
+          <li>
+            <div class="titulos">
+              <span>Permiso</span>
+              <span>Evaluador</span>
+              <span>Coordinador</span>
+              <span>Administrador</span>
+            </div>
+          </li>
+          <li>
+            <div class="permiso">
+              <span>Crear usuarios</span>
+              <input type="checkbox" name="" value="">
+              <input type="checkbox" name="" value="">
+              <input type="checkbox" name="" value="" checked>
+            </div>
+          </li>
+          <li>
+            <div class="permiso">
+              <span>Eliminar usuario</span>
+              <input type="checkbox" name="" value="">
+              <input type="checkbox" name="" value="">
+              <input type="checkbox" name="" value="" checked>
+            </div>
+          </li>
+          <li>
+            <div class="permiso">
+              <span>Recuperar contraseñas</span>
+              <input type="checkbox" name="" value="">
+              <input type="checkbox" name="" value="">
+              <input type="checkbox" name="" value="" checked>
+            </div>
+          </li>
+          <li>
+            <div class="permiso">
+              <span>Cambiar fechas</span>
+              <input type="checkbox" name="" value="">
+              <input type="checkbox" name="" value="" checked>
+              <input type="checkbox" name="" value="" checked>
+            </div>
+          </li>
+          <li>
+            <div class="permiso">
+              <span>Cambiar nivel de usuarios</span>
+              <input type="checkbox" name="" value="">
+              <input type="checkbox" name="" value="">
+              <input type="checkbox" name="" value="" checked>
+            </div>
+          </li>
+          <li>
+            <div class="permiso">
+              <span>Ver procesos de evaluación</span>
+              <input type="checkbox" name="" value="" checked>
+              <input type="checkbox" name="" value="" checked>
+              <input type="checkbox" name="" value="" checked>
+            </div>
+          </li>
+          <li>
+            <div class="permiso">
+              <span>Ver estadisticas</span>
+              <input type="checkbox" name="" value="">
+              <input type="checkbox" name="" value="" checked>
+              <input type="checkbox" name="" value="" checked>
+            </div>
+          </li>
+          <li>
+            <div class="permiso">
+              <span>Asignar evaluadores</span>
+              <input type="checkbox" name="" value="">
+              <input type="checkbox" name="" value="" checked>
+              <input type="checkbox" name="" value="" checked>
+            </div>
+          </li>
+          <li>
+            <div class="permiso">
+              <span>Asignar fechas de visita</span>
+              <input type="checkbox" name="" value="">
+              <input type="checkbox" name="" value="" checked>
+              <input type="checkbox" name="" value="" checked>
+            </div>
+          </li>
+          <li>
+            <div class="permiso">
+              <span>Crear versiones de formularios</span>
+              <input type="checkbox" name="" value="">
+              <input type="checkbox" name="" value="">
+              <input type="checkbox" name="" value="" checked>
+            </div>
+          </li>
+        </ul>
+
+        <div class="control">
+          <button class="btn primary" type="button" name="button">Guardar</button>
+        </div>
       </div>
     </main>
 

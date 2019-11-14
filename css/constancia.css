@@ -178,70 +178,60 @@ body {
   font-family: sans-serif;
   text-align: justify; }
 
-.proceso {
-  width: 80%;
-  margin: 25px 10%;
-  border: 1px solid #750000;
-  border-radius: 5px;
+main {
   display: flex;
-  flex-flow: wrap row;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px; }
-  .proceso .img {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 300px;
-    height: 75px; }
-  .proceso .datos {
-    width: 70%;
-    height: 100%; }
-    .proceso .datos ul {
-      list-style: none;
-      padding: 10px;
-      font-size: 16px; }
-      .proceso .datos ul li {
-        margin: 5px; }
-      .proceso .datos ul .uni {
-        padding-bottom: 10px;
-        font-size: 24px;
-        font-weight: bold;
-        color: #750000; }
-      .proceso .datos ul .fase {
-        color: green;
-        font-weight: bold;
-        padding-bottom: 5px; }
-      .proceso .datos ul .barra {
-        margin: 10px 0;
+  flex-flow: wrap; }
+  main .contenido {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    background: white;
+    padding: 0 15%; }
+    main .contenido h2 {
+      font-size: 28px;
+      width: 100%;
+      max-height: 50px;
+      margin: 30px 0% 70px;
+      text-align: center; }
+    main .contenido div {
+      width: 100%;
+      font-size: 15px;
+      margin: 0 50px;
+      text-align: justify; }
+      main .contenido div p {
+        margin: 3%; }
+        main .contenido div p span {
+          font-style: italic;
+          color: #750000; }
+    main .contenido .descripcion {
+      text-align: justify;
+      font-weight: bold;
+      font-size: 16px;
+      margin: 0% 0%;
+      color: #750000; }
+    main .contenido .global {
+      text-align: justify;
+      font-weight: bold;
+      font-size: 16px;
+      margin: 0% 0%; }
+    main .contenido .cuadro {
+      border: 1px solid #750000;
+      width: 75%;
+      margin: 15px 12.5% 50px 12.5%;
+      border-radius: 25px;
+      padding: 25px; }
+      main .contenido .cuadro .constancia {
         width: 100%;
-        height: 30px;
-        border: 1px solid rgba(0, 0, 0, 0.5);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        font-size: 24px;
-        font-weight: bold;
-        color: white; }
-        .proceso .datos ul .barra .sesenta {
-          position: absolute;
-          z-index: -1;
-          left: 0;
-          width: 60%;
-          height: 30px;
-          background: #bc8b23; }
-        .proceso .datos ul .barra .noventa {
-          position: absolute;
-          z-index: -1;
-          left: 0;
-          width: 90%;
-          height: 30px;
-          background: #23bc25; }
-        .proceso .datos ul .barra .cien {
-          position: absolute;
-          z-index: -1;
-          left: 0;
-          width: 100%;
-          height: 30px;
-          background: #129314; }
+        margin: 0; }
+    main .contenido h3 {
+      color: white;
+      background: #750000;
+      margin: 0;
+      text-align: center;
+      height: 30px;
+      padding: 10px;
+      border-radius: 15px 15px 0px 0px;
+      line-height: 15px;
+      margin-bottom: 25px; }

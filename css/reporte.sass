@@ -1,0 +1,81 @@
+@import botones
+@import headerSmall
+@import footer
+
+h2
+  padding: 25px
+  width: 100%
+  text-align: center
+
+.reporte
+  width: 90%
+  margin: 25px 5%
+
+  .titulos
+    display: flex
+    span
+      width: 20%
+      text-align: center
+      padding: 10px
+      background: $primary
+      color: white
+      font-size: 20px
+      font-weight: bold
+
+  .eje
+    width: 100%
+    display: flex
+    justify-content: space-between
+    flex-flow: row wrap
+    border: 1px solid rgba(0, 0, 0, 0.25)
+    .capitulo
+      width: 20%
+      border: 1px solid rgba(0, 0, 0, 0.25)
+      padding: 5px
+      display: flex
+      justify-content: center
+      align-items: center
+    .contenido
+      width: 80%
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-flow: column wrap
+      border: 1px solid rgba(0, 0, 0, 0.25)
+      .rubro
+        width: 100%
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-between
+        align-items: center
+        border: 1px solid rgba(0, 0, 0, 0.25)
+        .sub
+          width: 25%
+          padding: 5px
+        .oblig
+          width: 25%
+          padding: 5px
+          text-align: center
+        .pond
+          width: 25%
+          padding: 5px
+          font-size: 15px
+          line-height: 24px
+          input
+            background: white
+            border: 1px solid $primary
+        .obs
+          width: 25%
+          display: flex
+          justify-content: flex-end
+          align-items: flex-end
+          textarea
+            min-width: 100%
+            max-width: 100%
+            min-height: 100px
+            max-height: 300px
+            border: transparent
+            cursor: pointer
+
+.btn
+  margin: 25px 10%

@@ -173,75 +173,78 @@ footer {
       align-items: center;
       padding: 10px; }
 
-body {
-  font-size: 14px;
-  font-family: sans-serif;
-  text-align: justify; }
+h2 {
+  padding: 25px;
+  width: 100%;
+  text-align: center; }
 
-.proceso {
-  width: 80%;
-  margin: 25px 10%;
-  border: 1px solid #750000;
-  border-radius: 5px;
-  display: flex;
-  flex-flow: wrap row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px; }
-  .proceso .img {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 300px;
-    height: 75px; }
-  .proceso .datos {
-    width: 70%;
-    height: 100%; }
-    .proceso .datos ul {
-      list-style: none;
+.reporte {
+  width: 90%;
+  margin: 25px 5%; }
+  .reporte .titulos {
+    display: flex; }
+    .reporte .titulos span {
+      width: 20%;
+      text-align: center;
       padding: 10px;
-      font-size: 16px; }
-      .proceso .datos ul li {
-        margin: 5px; }
-      .proceso .datos ul .uni {
-        padding-bottom: 10px;
-        font-size: 24px;
-        font-weight: bold;
-        color: #750000; }
-      .proceso .datos ul .fase {
-        color: green;
-        font-weight: bold;
-        padding-bottom: 5px; }
-      .proceso .datos ul .barra {
-        margin: 10px 0;
+      background: #750000;
+      color: white;
+      font-size: 20px;
+      font-weight: bold; }
+  .reporte .eje {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    border: 1px solid rgba(0, 0, 0, 0.25); }
+    .reporte .eje .capitulo {
+      width: 20%;
+      border: 1px solid rgba(0, 0, 0, 0.25);
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .reporte .eje .contenido {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: column wrap;
+      border: 1px solid rgba(0, 0, 0, 0.25); }
+      .reporte .eje .contenido .rubro {
         width: 100%;
-        height: 30px;
-        border: 1px solid rgba(0, 0, 0, 0.5);
         display: flex;
-        justify-content: center;
+        flex-flow: row wrap;
+        justify-content: space-between;
         align-items: center;
-        position: relative;
-        font-size: 24px;
-        font-weight: bold;
-        color: white; }
-        .proceso .datos ul .barra .sesenta {
-          position: absolute;
-          z-index: -1;
-          left: 0;
-          width: 60%;
-          height: 30px;
-          background: #bc8b23; }
-        .proceso .datos ul .barra .noventa {
-          position: absolute;
-          z-index: -1;
-          left: 0;
-          width: 90%;
-          height: 30px;
-          background: #23bc25; }
-        .proceso .datos ul .barra .cien {
-          position: absolute;
-          z-index: -1;
-          left: 0;
-          width: 100%;
-          height: 30px;
-          background: #129314; }
+        border: 1px solid rgba(0, 0, 0, 0.25); }
+        .reporte .eje .contenido .rubro .sub {
+          width: 25%;
+          padding: 5px; }
+        .reporte .eje .contenido .rubro .oblig {
+          width: 25%;
+          padding: 5px;
+          text-align: center; }
+        .reporte .eje .contenido .rubro .pond {
+          width: 25%;
+          padding: 5px;
+          font-size: 15px;
+          line-height: 24px; }
+          .reporte .eje .contenido .rubro .pond input {
+            background: white;
+            border: 1px solid #750000; }
+        .reporte .eje .contenido .rubro .obs {
+          width: 25%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end; }
+          .reporte .eje .contenido .rubro .obs textarea {
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 100px;
+            max-height: 300px;
+            border: transparent;
+            cursor: pointer; }
+
+.btn {
+  margin: 25px 10%; }

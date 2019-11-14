@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  font-size: 16px; }
+
+.spacer {
+  width: 100%;
+  height: 60px; }
+
+.btn {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: black;
+  margin: 20px auto; }
+  .btn:hover {
+    transform: scale(1.05); }
+
+.primary {
+  background: #750000;
+  color: white; }
+  .primary:hover {
+    opacity: 0.75; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  font-size: 16px; }
+
+.spacer {
+  width: 100%;
+  height: 60px; }
+
+.btn {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: black;
+  margin: 20px auto; }
+  .btn:hover {
+    transform: scale(1.05); }
+
+.primary {
+  background: #750000;
+  color: white; }
+  .primary:hover {
+    opacity: 0.75; }
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.75); }
+  header nav {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: 0%;
+    background: rgba(0, 0, 0, 0.75); }
+    header nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end; }
+      header nav ul a {
+        text-decoration: none;
+        height: 60px; }
+        header nav ul a li {
+          text-align: center;
+          color: white;
+          font-size: 24px;
+          padding: 18px 25px;
+          cursor: pointer; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  font-size: 16px; }
+
+.spacer {
+  width: 100%;
+  height: 60px; }
+
+.btn {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: black;
+  margin: 20px auto; }
+  .btn:hover {
+    transform: scale(1.05); }
+
+.primary {
+  background: #750000;
+  color: white; }
+  .primary:hover {
+    opacity: 0.75; }
+
+footer {
+  position: relative;
+  z-index: 1000;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background: #2b2929;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 25px; }
+  footer .logo {
+    width: 35%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+  footer .identidad {
+    width: 65%;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.85); }
+    footer .identidad .contacto {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.75); }
+      footer .identidad .contacto .contacto-info {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        list-style: none; }
+        footer .identidad .contacto .contacto-info li {
+          list-style: none; }
+    footer .identidad .legal {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 10px; }
+
+.btn {
+  margin: 15px 0 15px auto; }
+
+.newUsuario {
+  width: 90%;
+  margin: 25px 5%;
+  border: 1px solid #750000;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 15px; }
+  .newUsuario h2 {
+    padding: 25px;
+    text-align: center;
+    width: 100%;
+    color: #750000; }
+  .newUsuario .perfil {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    padding: 15px; }
+    .newUsuario .perfil h3 {
+      padding: 15px;
+      text-align: center;
+      width: 100%; }
+    .newUsuario .perfil label {
+      width: 30%; }
+    .newUsuario .perfil input {
+      width: 70%;
+      margin: 5px 0;
+      padding: 5px 10px; }
+  .newUsuario .universidad {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    padding: 15px; }
+    .newUsuario .universidad h2 {
+      padding: 25px;
+      text-align: center;
+      width: 100%; }
+    .newUsuario .universidad h3 {
+      padding: 15px;
+      text-align: center;
+      width: 100%; }
+    .newUsuario .universidad label {
+      width: 30%; }
+    .newUsuario .universidad input {
+      width: 70%;
+      margin: 5px 0;
+      padding: 5px 10px; }
+  .newUsuario .control {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; }
+
+.recover {
+  width: 90%;
+  margin: 25px 5%;
+  border: 1px solid #750000;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 15px; }
+  .recover h2 {
+    padding: 25px;
+    text-align: center;
+    width: 100%;
+    color: #750000; }
+  .recover .reset {
+    width: 70%;
+    margin: 15px 12.5%;
+    display: flex;
+    flex-flow: row wrap; }
+    .recover .reset h3 {
+      padding: 15px;
+      text-align: center;
+      width: 100%; }
+    .recover .reset label {
+      display: inline-block;
+      width: 30%; }
+    .recover .reset input {
+      width: 70%;
+      margin: 5px 0;
+      padding: 5px 10px; }
+  .recover .control {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; }
+
+.chanceUsuario {
+  width: 90%;
+  margin: 25px 5%;
+  border: 1px solid #750000;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 15px; }
+  .chanceUsuario h2 {
+    padding: 25px;
+    text-align: center;
+    width: 100%;
+    color: #750000; }
+  .chanceUsuario ul {
+    list-style: none;
+    width: 60%;
+    margin: 15px 20%;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 5px; }
+    .chanceUsuario ul li {
+      border: 1px solid rgba(0, 0, 0, 0.25);
+      padding: 5px; }
+      .chanceUsuario ul li .titulos {
+        color: #750000;
+        font-size: 20px; }
+        .chanceUsuario ul li .titulos span {
+          display: inline-block; }
+        .chanceUsuario ul li .titulos .numero {
+          width: 5%; }
+        .chanceUsuario ul li .titulos .nombre {
+          width: 70%; }
+        .chanceUsuario ul li .titulos .clase {
+          width: 25%; }
+      .chanceUsuario ul li .usuario span {
+        display: inline-block; }
+      .chanceUsuario ul li .usuario .numero {
+        width: 5%; }
+      .chanceUsuario ul li .usuario .nombre {
+        width: 70%; }
+      .chanceUsuario ul li .usuario .clase {
+        width: 25%; }
+  .chanceUsuario .cambio {
+    width: 90%;
+    margin: 25px 5%;
+    display: flex;
+    flex-flow: row wrap; }
+    .chanceUsuario .cambio label {
+      display: inline-block;
+      width: 20%;
+      margin: 5px 0;
+      padding: 5px; }
+    .chanceUsuario .cambio input, .chanceUsuario .cambio select {
+      width: 30%;
+      padding: 5px;
+      margin: 5px 0;
+      padding: 5px; }
+  .chanceUsuario .control {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; }
+
+.chancePermiso {
+  width: 90%;
+  margin: 25px 5%;
+  border: 1px solid #750000;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 15px; }
+  .chancePermiso h2 {
+    padding: 25px;
+    text-align: center;
+    width: 100%;
+    color: #750000; }
+  .chancePermiso ul {
+    list-style: none;
+    width: 60%;
+    margin: 15px 20%;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 5px; }
+    .chancePermiso ul li {
+      width: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.25); }
+      .chancePermiso ul li .titulos {
+        color: #750000;
+        font-size: 20px;
+        display: flex;
+        flex-flow: row wrap; }
+        .chancePermiso ul li .titulos span {
+          display: inline-block;
+          width: 25%;
+          padding: 5px;
+          text-align: center; }
+      .chancePermiso ul li .permiso {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center; }
+        .chancePermiso ul li .permiso span {
+          display: inline-block;
+          width: 25%;
+          padding: 5px; }
+        .chancePermiso ul li .permiso input {
+          display: inline-block;
+          width: 25%;
+          padding: 5px; }
+  .chancePermiso .control {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; }
