@@ -7,6 +7,9 @@ body {
   font-family: sans-serif;
   font-size: 16px; }
 
+header nav ul a:hover {
+  background: rgba(117, 0, 0, 0.5); }
+
 .spacer {
   width: 100%;
   height: 60px; }
@@ -106,6 +109,9 @@ body {
   font-family: sans-serif;
   font-size: 16px; }
 
+header nav ul a:hover {
+  background: rgba(117, 0, 0, 0.5); }
+
 .spacer {
   width: 100%;
   height: 60px; }
@@ -158,6 +164,9 @@ body {
 body {
   font-family: sans-serif;
   font-size: 16px; }
+
+header nav ul a:hover {
+  background: rgba(117, 0, 0, 0.5); }
 
 .spacer {
   width: 100%;
@@ -344,3 +353,47 @@ main {
       display: flex;
       flex-flow: row wrap;
       justify-content: flex-start; }
+    main .contenido .equipo {
+      display: flex;
+      flex-flow: wrap row; }
+      main .contenido .equipo .titulos {
+        display: flex;
+        width: 100%;
+        margin: 5px;
+        justify-content: space-around;
+        font-size: 20px;
+        font-weight: bold; }
+      main .contenido .equipo .lista {
+        width: 40%;
+        height: 300px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        margin: 5px 5%;
+        overflow-x: hidden;
+        overflow-y: scroll; }
+        main .contenido .equipo .lista ul {
+          list-style: none; }
+          main .contenido .equipo .lista ul li {
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer; }
+      main .contenido .equipo .seleccion {
+        width: 40%;
+        height: 300px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        margin: 5px 5%;
+        overflow-x: hidden;
+        overflow-y: scroll; }
+        main .contenido .equipo .seleccion ul {
+          list-style: none; }
+          main .contenido .equipo .seleccion ul li {
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer; }
+
+.save {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }

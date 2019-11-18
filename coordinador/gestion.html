@@ -9,6 +9,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/gestion.css">
   </head>
+
+  <script type="text/javascript">
+    function select(ev){
+      $('#seleccion').append('<li id='+ev+' onclick="unselect(\''+ev+'\')">'+$('#'+ev).html()+'</li>');
+      $('#'+ev).remove();
+    }
+
+    function unselect(ev){
+      var elemento = $('#'+ev);
+      $('#'+ev).remove();
+      $('#lista').append('<li id='+ev+' onclick="select(\''+ev+'\')">'+elemento.html()+'</li>');
+    }
+  </script>
   <body>
     <header>
       <nav>
@@ -64,7 +77,9 @@
             <option value="version2">Versión 2</option>
             <option value="version3">Versión 3</option>
           </select>
-
+          <div class="save">
+            <button class="btn primary" type="button" name="button">Guardar</button>
+          </div>
         </div>
 
         <div class="cuadro" id="primRevAuto">
@@ -77,6 +92,9 @@
           </div>
           <input type="checkbox" name="verAutoevaluacion" value="1"> Aprobar
           <textarea class="comentario" name="comentario" placeholder="Observaciones por corregir..."></textarea>
+          <div class="save">
+            <button class="btn primary" type="button" name="button">Guardar</button>
+          </div>
         </div>
 
         <div class="cuadro" id="revAuto">
@@ -95,21 +113,38 @@
             <option value="evaluador6">Gerardo Ríos Sánchez</option>
           </select>
           <p>Seleccione los evaluadores que revisarán la autoevaluación y realizarán la Visita de pares.</p>
-          <input type="checkbox" name="evaluador1" value="1"> Fernando Rodríguez Pérez<br>
-          <input type="checkbox" name="evaluador2" value="2"> Veronica Márquez Bugarin<br>
-          <input type="checkbox" name="evaluador3" value="3"> Alberto Flores Camino<br>
-          <input type="checkbox" name="evaluador3" value="4"> Romina Esparza Robles<br>
-          <input type="checkbox" name="evaluador3" value="5"> Ricardo Jiménez Mendoza<br>
-          <input type="checkbox" name="evaluador3" value="6"> Gerardo Ríos Sánchez<br>
+          <div class="equipo">
+            <div class="titulos">
+              <span>Evaluadores disponibles</span>
+              <span>Evaluadores seleccionados</span>
+            </div>
+            <div class="lista">
+              <ul id="lista">
+                <li id="ev1" onclick="select('ev1')"> Fernando Rodríguez Pérez</li>
+                <li id="ev2" onclick="select('ev2')"> Veronica Márquez Bugarin</li>
+                <li id="ev3" onclick="select('ev3')"> Alberto Flores Camino</li>
+                <li id="ev4" onclick="select('ev4')"> Romina Esparza Robles</li>
+                <li id="ev5" onclick="select('ev5')"> Ricardo Jiménez Mendoza</li>
+                <li id="ev6" onclick="select('ev6')"> Gerardo Ríos Sánchez</li>
+              </ul>
+            </div>
+            <div class="seleccion">
+              <ul id="seleccion">
+
+              </ul>
+            </div>
+          </div>
 
           <h4>Asignar Plazo</h4>
           <p>Modifique el período de tiempo de captura para que el resposable del PIT complete el formulario de autoevaluación. </p>
-          <label for="fechaInicio">Fecha de Inicio: </label>
-          <input type="date" name="fechaInicio" value=""><br>
-          <label for="fechaFin">Fecha de Cierre: </label>
-          <input type="date" name="fechaFin" value=""><br>
-
+            <label for="fechaInicio">Fecha de Inicio: </label>
+            <input type="date" name="fechaInicio" value=""><br>
+            <label for="fechaFin">Fecha de Cierre: </label>
+            <input type="date" name="fechaFin" value=""><br>
           </p>
+          <div class="save">
+            <button class="btn primary" type="button" name="button">Guardar</button>
+          </div>
         </div>
 
         <div class="cuadro" id="confAuto">
@@ -122,6 +157,9 @@
           </div>
           <input type="checkbox" name="verRevision" value="1"> Aprobar
           <textarea name="comentario" class="comentario" placeholder="Observaciones por corregir"></textarea>
+          <div class="save">
+            <button class="btn primary" type="button" name="button">Guardar</button>
+          </div>
         </div>
 
         <div class="cuadro" id="ajVis">
@@ -131,6 +169,9 @@
           <input type="date" name="fecha" value=""><br>
           <label for="hora">Hora de inicio: </label>
           <input type="time" name="hora" value=""><br>
+          <div class="save">
+            <button class="btn primary" type="button" name="button">Guardar</button>
+          </div>
         </div>
 
         <div class="cuadro" id="repFin">
@@ -140,6 +181,9 @@
           <input type="date" name="fechaInicio" value=""><br>
           <label for="fechaFin">Fecha de Cierre: </label>
           <input type="date" name="fechaFin" value=""><br>
+          <div class="save">
+            <button class="btn primary" type="button" name="button">Guardar</button>
+          </div>
         </div>
       </section>
     </main>

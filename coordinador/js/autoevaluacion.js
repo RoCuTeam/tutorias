@@ -1,6 +1,10 @@
 
 function presentacion(){
   var cont = '<h2>Guía para el autoestudio y validación de pares de los Programas Institucionales de Tutoría.</h2>'+
+    	       '<div class="avance">'+
+               '<p>Porcentaje de avance: 50% completo</p>'+
+               '<div class="barra"><span class="color cincuenta"></span></div>'+
+              '</div>'+
               '<article class="">'+
                 '<p>'+
                   'Dentro de las principales acciones para lograr los objetivos de las Instituciones de Educación Superior (IES), los Programas Institucionales de Tutoría (PIT) representan un eje importante a considerar; aspectos tales como el rezago educativo, la deserción escolar, la adherencia al programa, el sano desarrollo emocional y sobre todo la calidad académica tienen en la tutoría una base sólida. Una forma de lograr que las IES tengan estos programas en desarrollo y con los mejores estándares de calidad, son los procesos de mejora continua.'+
@@ -21,10 +25,13 @@ function presentacion(){
   contenido.innerHTML = cont;
 }
 
-
 function eje1(){
   var cont="";
-  cont += "<h2>Fundamentos y condiciones de operación</h2>";
+  cont += "       <h2>Fundamentos y condiciones de operación</h2>";
+  cont += '       <div class="avance">';
+  cont += '           <p>Porcentaje de avance: 90% completo</p>';
+  cont += '           <div class="barra"><span class="color noventa"></span></div>';
+  cont += '        </div>';
   cont += "        <div class=\"botones-save\">";
   cont += "          <button type=\"button\" name=\"button\" class=\"btn btn-save\"><i class=\"fas fa-save\"></i> Guardar</button>";
   cont += "        </div>";
@@ -122,6 +129,10 @@ function eje1(){
 function eje2(){
   var cont="";
   cont += "<h2>Gobierno y liderazgo</h2>";
+  cont += '       <div class="avance">';
+  cont += '           <p>Porcentaje de avance: 70% completo</p>';
+  cont += '           <div class="barra"><span class="color setenta"></span></div>';
+  cont += '        </div>';
   cont += "        <!--Agregar form-->";
   cont += "        <div class=\"botones-save\">";
   cont += "          <button type=\"button\" name=\"button\" class=\"btn btn-save\"><i class=\"fas fa-save\"></i> Guardar</button>";
@@ -213,6 +224,10 @@ function eje2(){
 function eje3(){
   var cont="";
   cont += "<h2>Planificación</h2>";
+  cont += '       <div class="avance">';
+  cont += '           <p>Porcentaje de avance: 80% completo</p>';
+  cont += '           <div class="barra"><span class="color ochenta"></span></div>';
+  cont += '        </div>';
   cont += "        <!--Agregar form-->";
   cont += "        <div class=\"botones-save\">";
   cont += "          <button type=\"button\" name=\"button\" class=\"btn btn-save\"><i class=\"fas fa-save\"></i> Guardar</button>";
@@ -301,6 +316,10 @@ function eje3(){
 function eje4(){
   var cont="";
   cont += "<h2>Soporte</h2>";
+  cont += '       <div class="avance">';
+  cont += '           <p>Porcentaje de avance: 100% completo</p>';
+  cont += '           <div class="barra"><span class="color cien"></span></div>';
+  cont += '        </div>';
   cont += "        <!--Agregar form-->";
   cont += "        <div class=\"botones-save\">";
   cont += "          <button type=\"button\" name=\"button\" class=\"btn btn-save\"><i class=\"fas fa-save\"></i> Guardar</button>";
@@ -427,6 +446,10 @@ function eje4(){
 function eje5(){
   var cont="";
   cont += "<h2>Operación</h2>";
+  cont += '       <div class="avance">';
+  cont += '           <p>Porcentaje de avance: 40% completo</p>';
+  cont += '           <div class="barra"><span class="color cuarenta"></span></div>';
+  cont += '        </div>';
   cont += "        <!--Agregar form-->";
   cont += "        <div class=\"botones-save\">";
   cont += "          <button type=\"button\" name=\"button\" class=\"btn btn-save\"><i class=\"fas fa-save\"></i> Guardar</button>";
@@ -514,6 +537,10 @@ function eje5(){
 function eje6(){
   var cont="";
   cont += "        <h2>Evaluación del desempeño<\/h2>";
+  cont += '       <div class="avance">';
+  cont += '           <p>Porcentaje de avance: 0% completo</p>';
+  cont += '           <div class="barra"><span class="color cero"></span></div>';
+  cont += '        </div>';
   cont += "        <!--Agregar form-->";
   cont += "        <div class=\"botones-save\">";
   cont += "          <button type=\"button\" name=\"button\" class=\"btn btn-save\"><i class=\"fas fa-save\"><\/i> Guardar<\/button>";
@@ -611,6 +638,10 @@ function eje6(){
 function eje7(){
   var cont="";
   cont += "<h2>Mejora continua<\/h2>";
+  cont += '       <div class="avance">';
+  cont += '           <p>Porcentaje de avance: 20% completo</p>';
+  cont += '           <div class="barra"><span class="color veinte"></span></div>';
+  cont += '        </div>';
   cont += "        <!--Agregar form-->";
   cont += "        <div class=\"botones-save\">";
   cont += "          <button type=\"button\" name=\"button\" class=\"btn btn-save\"><i class=\"fas fa-save\"><\/i> Guardar<\/button>";

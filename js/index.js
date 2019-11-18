@@ -2,7 +2,7 @@
 function login (){
   var formulario = "<div class='login'>"+
                       "<h2> Login </h2>"+
-                      "<input class='btn-data' type='text' placeholder='&#128272; Usuario' name='usuario'>"+
+                      "<input class='btn-data' type='text' placeholder='&#128272; Usuario' name='usuario' id='username'>"+
                       "<input class='btn-data' type='password' placeholder='&#128272; Contraseña' name='clave'>"+
                       "<a onClick='menu()'><input class='btn-submit' type='submit' value='Ingresar'></a>"+
                       "<a class='misspass' href='resetPassword.html'>¿Olvidaste tu contraseña?</a>"+
@@ -13,10 +13,21 @@ function login (){
 }
 
 function menu(){
+  var usuario = $('#username').val();
   var opcion = confirm("Está a punto de ingresar al sistema \n             ¿Desea continuar?");
-    if (opcion == true) {
-        location.href = "home.html";
-	} else {
+  if (opcion == true && usuario == "administrador") {
+    location.href = "administrador/home.html";
+	}
+  else if (opcion == true && usuario == "coordinador") {
+    location.href = "coordinador/home.html";
+	}
+  else if (opcion == true && usuario == "evaluador") {
+    location.href = "evaluador/home.html";
+	}
+  else if (opcion == true && usuario == "responsable") {
+    location.href = "home.html";
+	}
+  else {
 
 	}
 }
