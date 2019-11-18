@@ -33,6 +33,24 @@ body {
   .primary:hover {
     opacity: 0.75; }
 
+.secondary {
+  background: #750000;
+  color: white; }
+  .secondary:hover {
+    opacity: 0.75; }
+
+.tertiary {
+  width: 80px;
+  height: 30px;
+  border: 1px solid rgba(117, 0, 0, 0.5);
+  font-size: 14px;
+  background: white;
+  color: #750000;
+  text-decoration: none;
+  margin: 0px 0 10px 20px; }
+  .tertiary:hover {
+    opacity: 0.50; }
+
 * {
   margin: 0;
   padding: 0;
@@ -68,8 +86,27 @@ body {
   .primary:hover {
     opacity: 0.75; }
 
+.secondary {
+  background: #750000;
+  color: white; }
+  .secondary:hover {
+    opacity: 0.75; }
+
+.tertiary {
+  width: 80px;
+  height: 30px;
+  border: 1px solid rgba(117, 0, 0, 0.5);
+  font-size: 14px;
+  background: white;
+  color: #750000;
+  text-decoration: none;
+  margin: 0px 0 10px 20px; }
+  .tertiary:hover {
+    opacity: 0.50; }
+
 header {
   position: fixed;
+  z-index: 10;
   width: 100%;
   height: 60px;
   background: rgba(0, 0, 0, 0.75); }
@@ -128,17 +165,36 @@ body {
   .primary:hover {
     opacity: 0.75; }
 
+.secondary {
+  background: #750000;
+  color: white; }
+  .secondary:hover {
+    opacity: 0.75; }
+
+.tertiary {
+  width: 80px;
+  height: 30px;
+  border: 1px solid rgba(117, 0, 0, 0.5);
+  font-size: 14px;
+  background: white;
+  color: #750000;
+  text-decoration: none;
+  margin: 0px 0 10px 20px; }
+  .tertiary:hover {
+    opacity: 0.50; }
+
 footer {
   position: relative;
   z-index: 1000;
   bottom: 0;
   width: 100%;
   height: 150px;
-  background: #2b2929;
+  background: #750000;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 25px; }
+  padding: 25px;
+  border-top: 5px solid white; }
   footer .logo {
     width: 35%;
     height: 100%;
@@ -172,6 +228,94 @@ footer {
       justify-content: center;
       align-items: center;
       padding: 10px; }
+
+.cero {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: white; }
+
+.diez {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 10%;
+  height: 100%;
+  background: #931212; }
+
+.veinte {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background: #933512; }
+
+.treinta {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background: #934b12; }
+
+.cuarenta {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background: #936e12; }
+
+.cincuenta {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #a3a913; }
+
+.sesenta {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background: #75a913; }
+
+.setenta {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  background: #5ca913; }
+
+.ochenta {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  background: #33a913; }
+
+.noventa {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  background: #10b046; }
+
+.cien {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #10b087; }
 
 body {
   font-size: 14px;
@@ -222,6 +366,33 @@ main {
           background: #750000;
           opacity: 0.75;
           transform: scale(1.05); }
+    main .contenido .avance {
+      width: 80%;
+      margin: 15px 10%;
+      font-size: 18px; }
+      main .contenido .avance .barra {
+        width: 100%;
+        font-size: 12px;
+        line-height: 25px;
+        text-align: center;
+        color: black;
+        text-shadow: 1px 1px white;
+        margin: 5px;
+        height: 25px;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        position: relative; }
+        main .contenido .avance .barra .texto {
+          width: 100%;
+          height: 100%;
+          font-size: 12px;
+          line-height: 25px;
+          position: absolute;
+          z-index: 2;
+          left: 0;
+          text-align: center; }
+        main .contenido .avance .barra .color {
+          z-index: 1; }
     main .contenido .formulario {
       width: 80%;
       margin: 25px 10%;
@@ -248,6 +419,7 @@ main {
       main .contenido .formulario textarea {
         min-height: 50px;
         max-height: 250px;
+        height: 100px;
         min-width: 65%;
         max-width: 65%;
         background: transparent;
