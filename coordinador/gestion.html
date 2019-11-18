@@ -3,8 +3,9 @@
   <head>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
   	<meta charset="utf-8">
-  	<link rel="shortcut icon" href="img/logo.png">
+  	<link rel="shortcut icon" href="../img/logo.png">
     <title>Configuración del proceso de Evaluación del PIT</title>
+    <script type="text/javascript" src="../js/jquery.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/gestion.css">
   </head>
@@ -16,8 +17,18 @@
         </ul>
       </nav>
     </header>
-
+    <div class="spacer"></div>
     <main>
+      <section class="menu">
+        <ul>
+          <li onclick="$('#ajAuto').fadeIn(0); $('#primRevAuto').fadeOut(0); $('#revAuto').fadeOut(0); $('#confAuto').fadeOut(0); $('#ajVis').fadeOut(0); $('#repFin').fadeOut(0);">Ajustes de autoevaluación</li>
+          <li onclick="$('#ajAuto').fadeOut(0); $('#primRevAuto').fadeIn(0); $('#revAuto').fadeOut(0); $('#confAuto').fadeOut(0); $('#ajVis').fadeOut(0); $('#repFin').fadeOut(0);">Primera revisión</li>
+          <li onclick="$('#ajAuto').fadeOut(0); $('#primRevAuto').fadeOut(0); $('#revAuto').fadeIn(0); $('#confAuto').fadeOut(0); $('#ajVis').fadeOut(0); $('#repFin').fadeOut(0);">Revisión a autoevaluación</li>
+          <li onclick="$('#ajAuto').fadeOut(0); $('#primRevAuto').fadeOut(0); $('#revAuto').fadeOut(0); $('#confAuto').fadeIn(0); $('#ajVis').fadeOut(0); $('#repFin').fadeOut(0);">Confirmación a revisión</li>
+          <li onclick="$('#ajAuto').fadeOut(0); $('#primRevAuto').fadeOut(0); $('#revAuto').fadeOut(0); $('#confAuto').fadeOut(0); $('#ajVis').fadeIn(0); $('#repFin').fadeOut(0);">Ajustes visita</li>
+          <li onclick="$('#ajAuto').fadeOut(0); $('#primRevAuto').fadeOut(0); $('#revAuto').fadeOut(0); $('#confAuto').fadeOut(0); $('#ajVis').fadeOut(0); $('#repFin').fadeIn(0);">Reporte final</li>
+        </ul>
+      </section>
       <section class="contenido">
         <h2>Configuración del proceso de Evaluación del PIT</h2>
         <p class="descripcion">Este módulo permite configurar los detalles correspondientes de todo el proceso de Autoevaluación.</p>
@@ -34,7 +45,7 @@
           </select>
         </div>
 
-        <div class="cuadro">
+        <div class="cuadro" id="ajAuto">
           <h3>Ajustes de Autoevaluación </h3><br>
           <p>La autoevaluación es el autoestudio que realiza el responsable del Programa Institucional de Tutorías de cada institución.</p>
 
@@ -56,7 +67,7 @@
 
         </div>
 
-        <div class="cuadro">
+        <div class="cuadro" id="primRevAuto">
           <h3>Primera Revisión de Autoevaluaciones</h3><br>
           <p>Seleccione la Autoevaluación que desea verificar, para después habilitar la revisión de la misma a los evaluadores. </p>
           <div class="verAutoevaluacion">
@@ -68,7 +79,7 @@
           <textarea class="comentario" name="comentario" placeholder="Observaciones por corregir..."></textarea>
         </div>
 
-        <div class="cuadro">
+        <div class="cuadro" id="revAuto">
           <h3>Ajustes del proceso de Revisión a Autoevaluación</h3><br>
           <p>La revisión de la autoevaluación es el proceso en el cuál cada uno de los evaluadores analiza el autoestudio de la IES.</p>
 
@@ -101,7 +112,7 @@
           </p>
         </div>
 
-        <div class="cuadro">
+        <div class="cuadro" id="confAuto">
           <h3>Confirmación de Revisión de la Autoevaluación</h3><br>
           <p>Seleccione la Revisión que desea verificar, para después habilitar la visita de pares de la misma. </p>
           <div class="verAutoevaluacion">
@@ -113,7 +124,7 @@
           <textarea name="comentario" class="comentario" placeholder="Observaciones por corregir"></textarea>
         </div>
 
-        <div class="cuadro">
+        <div class="cuadro" id="ajVis">
           <h3>Ajustes de Visita de pares</h3><br>
           <p>Determine la fecha y hora de la visita de pares:</p>
           <label for="fecha">Fecha: </label>
@@ -122,7 +133,7 @@
           <input type="time" name="hora" value=""><br>
         </div>
 
-        <div class="cuadro">
+        <div class="cuadro" id="repFin">
           <h3>Ajustes del Reporte Final de Integración</h3><br>
           <p>Modifique el período de tiempo de captura del Reporte Final de Integración correspondiente a la visita de pares. </p>
           <label for="fechaInicio">Fecha de Inicio: </label>
@@ -149,5 +160,9 @@
         </div>
       </div>
     </footer>
+
+    <script type="text/javascript">
+      $('#ajAuto').fadeIn(0); $('#primRevAuto').fadeOut(0); $('#revAuto').fadeOut(0); $('#confAuto').fadeOut(0); $('#ajVis').fadeOut(0); $('#repFin').fadeOut(0);
+    </script>
   </body>
   </html>

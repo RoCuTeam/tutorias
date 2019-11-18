@@ -4,217 +4,309 @@
 
 .btn
   margin: 15px 0 15px auto
-
-.newUsuario
-  width: 90%
-  margin: 25px 5%
-  border: 1px solid $primary
-  border-radius: 15px
+main
   display: flex
+  flex-flow: wrap row
   justify-content: space-between
-  flex-flow: row wrap
-  padding: 15px
-  h2
-    padding: 25px
-    text-align: center
-    width: 100%
-    color: $primary
+  align-items: flex-start
+  .menu
+    width: 25%
+    height: 100vh
+    background: $primary
+    color: $white
+    ul
+      position: fixed
+      background: $primary
+      height: 100vh
+      width: 25vw
+      list-style: none
+      li
+        font-size: 24px
+        margin: 10px 0
+        padding: 10px
+        color: $white
+        cursor: pointer
 
-  .perfil
-    width: 50%
-    display: flex
-    justify-content: center
-    flex-flow: row wrap
-    align-items: flex-start
-    padding: 15px
-    h3
+  .contenido
+    width: 75%
+    .usuarios
+      width: 90%
+      margin: 25px 5%
+      border: 1px solid $primary
+      border-radius: 15px
+      display: flex
+      justify-content: space-between
+      flex-flow: row wrap
       padding: 15px
-      text-align: center
-      width: 100%
-    label
-      width: 30%
-    input
-      width: 70%
-      margin: 5px 0
-      padding: 5px 10px
-
-  .universidad
-    width: 50%
-    display: flex
-    justify-content: flex-start
-    align-items: flex-start
-    flex-flow: row wrap
-    padding: 15px
-    h2
-      padding: 25px
-      text-align: center
-      width: 100%
-
-    h3
-      padding: 15px
-      text-align: center
-      width: 100%
-
-    label
-      width: 30%
-
-    input
-      width: 70%
-      margin: 5px 0
-      padding: 5px 10px
-
-  .control
-    width: 100%
-    display: flex
-    justify-content: flex-end
-
-.recover
-  width: 90%
-  margin: 25px 5%
-  border: 1px solid $primary
-  border-radius: 15px
-  display: flex
-  justify-content: space-between
-  flex-flow: row wrap
-  padding: 15px
-  h2
-    padding: 25px
-    text-align: center
-    width: 100%
-    color: $primary
-  .reset
-    width: 70%
-    margin: 15px 12.5%
-    display: flex
-    flex-flow: row wrap
-    h3
-      padding: 15px
-      text-align: center
-      width: 100%
-    label
-      display: inline-block
-      width: 30%
-    input
-      width: 70%
-      margin: 5px 0
-      padding: 5px 10px
-  .control
-    width: 100%
-    display: flex
-    justify-content: flex-end
-
-.chanceUsuario
-  width: 90%
-  margin: 25px 5%
-  border: 1px solid $primary
-  border-radius: 15px
-  display: flex
-  justify-content: space-between
-  flex-flow: row wrap
-  padding: 15px
-  h2
-    padding: 25px
-    text-align: center
-    width: 100%
-    color: $primary
-  ul
-    list-style: none
-    width: 60%
-    margin: 15px 20%
-    border: 1px solid rgba(0, 0, 0, .25)
-    padding: 5px
-    li
-      border: 1px solid rgba(0, 0, 0, .25)
-      padding: 5px
-      .titulos
+      h2
+        padding: 25px
+        text-align: center
+        width: 100%
         color: $primary
-        font-size: 20px
-        span
-          display: inline-block
-        .numero
-          width: 5%
-        .nombre
-          width: 70%
-        .clase
-          width: 25%
-      .usuario
-        span
-          display: inline-block
-        .numero
-          width: 5%
-        .nombre
-          width: 70%
-        .clase
-          width: 25%
-
-  .cambio
-    width: 90%
-    margin: 25px 5%
-    display: flex
-    flex-flow: row wrap
-    label
-      display: inline-block
-      width: 20%
-      margin: 5px 0
-      padding: 5px
-    input, select
-      width: 30%
-      padding: 5px
-      margin: 5px 0
-      padding: 5px
-  .control
-    width: 100%
-    display: flex
-    justify-content: flex-end
-
-.chancePermiso
-  width: 90%
-  margin: 25px 5%
-  border: 1px solid $primary
-  border-radius: 15px
-  display: flex
-  justify-content: space-between
-  flex-flow: row wrap
-  padding: 15px
-  h2
-    padding: 25px
-    text-align: center
-    width: 100%
-    color: $primary
-  ul
-    list-style: none
-    width: 60%
-    margin: 15px 20%
-    border: 1px solid rgba(0, 0, 0, .25)
-    padding: 5px
-    li
-      width: 100%
-      border: 1px solid rgba(0, 0, 0, .25)
-      .titulos
-        color: $primary
-        font-size: 20px
-        display: flex
-        flex-flow: row wrap
-        span
-          display: inline-block
-          width: 25%
+      ul
+        list-style: none
+        width: 90%
+        margin: 15px 5%
+        border: 1px solid rgba(0, 0, 0, .25)
+        padding: 5px
+        li
+          border: 1px solid rgba(0, 0, 0, .25)
           padding: 5px
-          text-align: center
+          .titulos
+            color: $primary
+            font-size: 20px
+            span
+              display: inline-block
+            .numero
+              width: 5%
+            .nombre
+              width: 35%
+            .universidad
+              width: 35%
+            .clase
+              width: 25%
+          .usuario
+            span
+              display: inline-block
+            .numero
+              width: 5%
+            .nombre
+              width: 35%
+            .universidad
+              width: 35%
+            .clase
+              width: 25%
 
-      .permiso
+      .cambio
+        width: 90%
+        margin: 25px 5%
         display: flex
         flex-flow: row wrap
-        align-items: center
+        label
+          display: inline-block
+          width: 20%
+          margin: 5px 0
+          padding: 5px
+        input, select
+          width: 30%
+          padding: 5px
+          margin: 5px 0
+          padding: 5px
+      .control
+        width: 100%
+        display: flex
+        justify-content: flex-end
+
+    .newUsuario
+      width: 90%
+      margin: 25px 5%
+      border: 1px solid $primary
+      border-radius: 15px
+      display: flex
+      justify-content: space-between
+      flex-flow: row wrap
+      padding: 15px
+      h2
+        padding: 25px
+        text-align: center
+        width: 100%
+        color: $primary
+
+      .perfil
+        width: 50%
+        display: flex
         justify-content: center
-        span
-          display: inline-block
-          width: 25%
-          padding: 5px
+        flex-flow: row wrap
+        align-items: flex-start
+        padding: 15px
+        h3
+          padding: 15px
+          text-align: center
+          width: 100%
+        label
+          width: 30%
         input
+          width: 70%
+          margin: 5px 0
+          padding: 5px 10px
+
+      .universidad
+        width: 50%
+        display: flex
+        justify-content: flex-start
+        align-items: flex-start
+        flex-flow: row wrap
+        padding: 15px
+        h2
+          padding: 25px
+          text-align: center
+          width: 100%
+
+        h3
+          padding: 15px
+          text-align: center
+          width: 100%
+
+        label
+          width: 30%
+
+        input
+          width: 70%
+          margin: 5px 0
+          padding: 5px 10px
+
+      .control
+        width: 100%
+        display: flex
+        justify-content: flex-end
+
+    .recover
+      width: 90%
+      margin: 25px 5%
+      border: 1px solid $primary
+      border-radius: 15px
+      display: flex
+      justify-content: space-between
+      flex-flow: row wrap
+      padding: 15px
+      h2
+        padding: 25px
+        text-align: center
+        width: 100%
+        color: $primary
+      .reset
+        width: 70%
+        margin: 15px 12.5%
+        display: flex
+        flex-flow: row wrap
+        h3
+          padding: 15px
+          text-align: center
+          width: 100%
+        label
           display: inline-block
-          width: 25%
+          width: 30%
+        input
+          width: 70%
+          margin: 5px 0
+          padding: 5px 10px
+      .control
+        width: 100%
+        display: flex
+        justify-content: flex-end
+
+    .chanceUsuario
+      width: 90%
+      margin: 25px 5%
+      border: 1px solid $primary
+      border-radius: 15px
+      display: flex
+      justify-content: space-between
+      flex-flow: row wrap
+      padding: 15px
+      h2
+        padding: 25px
+        text-align: center
+        width: 100%
+        color: $primary
+      ul
+        list-style: none
+        width: 60%
+        margin: 15px 20%
+        border: 1px solid rgba(0, 0, 0, .25)
+        padding: 5px
+        li
+          border: 1px solid rgba(0, 0, 0, .25)
           padding: 5px
-  .control
-    width: 100%
-    display: flex
-    justify-content: flex-end
+          .titulos
+            color: $primary
+            font-size: 20px
+            span
+              display: inline-block
+            .numero
+              width: 5%
+            .nombre
+              width: 70%
+            .clase
+              width: 25%
+          .usuario
+            span
+              display: inline-block
+            .numero
+              width: 5%
+            .nombre
+              width: 70%
+            .clase
+              width: 25%
+
+      .cambio
+        width: 90%
+        margin: 25px 5%
+        display: flex
+        flex-flow: row wrap
+        label
+          display: inline-block
+          width: 20%
+          margin: 5px 0
+          padding: 5px
+        input, select
+          width: 30%
+          padding: 5px
+          margin: 5px 0
+          padding: 5px
+      .control
+        width: 100%
+        display: flex
+        justify-content: flex-end
+
+    .chancePermiso
+      width: 90%
+      margin: 25px 5%
+      border: 1px solid $primary
+      border-radius: 15px
+      display: flex
+      justify-content: space-between
+      flex-flow: row wrap
+      padding: 15px
+      h2
+        padding: 25px
+        text-align: center
+        width: 100%
+        color: $primary
+      ul
+        list-style: none
+        width: 60%
+        margin: 15px 20%
+        border: 1px solid rgba(0, 0, 0, .25)
+        padding: 5px
+        li
+          width: 100%
+          border: 1px solid rgba(0, 0, 0, .25)
+          .titulos
+            color: $primary
+            font-size: 20px
+            display: flex
+            flex-flow: row wrap
+            span
+              display: inline-block
+              width: 25%
+              padding: 5px
+              text-align: center
+
+          .permiso
+            display: flex
+            flex-flow: row wrap
+            align-items: center
+            justify-content: center
+            span
+              display: inline-block
+              width: 25%
+              padding: 5px
+            input
+              display: inline-block
+              width: 25%
+              padding: 5px
+      .control
+        width: 100%
+        display: flex
+        justify-content: flex-end

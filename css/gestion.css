@@ -57,11 +57,12 @@ footer {
   bottom: 0;
   width: 100%;
   height: 150px;
-  background: #2b2929;
+  background: #750000;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 25px; }
+  padding: 25px;
+  border-top: 5px solid white; }
   footer .logo {
     width: 35%;
     height: 100%;
@@ -155,127 +156,191 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-size: 16px;
   font-family: sans-serif;
-  text-align: justify; }
-
-header {
-  position: fixed;
-  width: 100%;
-  height: 60px;
-  background: rgba(0, 0, 0, 0.75); }
-
-nav {
-  position: absolute;
-  width: 100%;
-  height: 60px;
-  bottom: 0%;
-  background: rgba(0, 0, 0, 0.75); }
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end; }
-    nav ul a {
-      text-decoration: none;
-      height: 60px; }
-      nav ul a li {
-        text-align: center;
-        color: white;
-        font-size: 24px;
-        padding: 18px 25px;
-        cursor: pointer; }
+  font-size: 16px; }
 
 .spacer {
   width: 100%;
   height: 60px; }
 
+.btn {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: black;
+  margin: 20px auto; }
+  .btn:hover {
+    transform: scale(1.05); }
+
+.primary {
+  background: #750000;
+  color: white; }
+  .primary:hover {
+    opacity: 0.75; }
+
+.secondary {
+  background: #750000;
+  color: white; }
+  .secondary:hover {
+    opacity: 0.75; }
+
+.tertiary {
+  width: 80px;
+  height: 30px;
+  border: 1px solid rgba(117, 0, 0, 0.5);
+  font-size: 14px;
+  background: white;
+  color: #750000;
+  text-decoration: none;
+  margin: 0px 0 10px 20px; }
+  .tertiary:hover {
+    opacity: 0.50; }
+
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.75); }
+  header nav {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: 0%;
+    background: rgba(0, 0, 0, 0.75); }
+    header nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end; }
+      header nav ul a {
+        text-decoration: none;
+        height: 60px; }
+        header nav ul a li {
+          text-align: center;
+          color: white;
+          font-size: 24px;
+          padding: 18px 25px;
+          cursor: pointer; }
+
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  text-align: justify; }
+
 main {
   display: flex;
-  justify-content: center;
-  flex-flow: wrap; }
-  main .cuadro {
-    border: 1px solid #750000;
-    width: 80%;
-    margin: 15px auto 50px auto;
-    border-radius: 15px;
-    padding: 0px 0px 25px 0; }
-  main .descripcion {
-    width: 80%;
-    margin: 20px auto 30px auto;
-    padding: 0 0 0 5px; }
-  main h2 {
-    font-size: 28px;
-    width: 100%;
-    max-height: 50px;
-    margin: 120px 0% 30px 0%;
-    text-align: center; }
-  main h3 {
-    color: white;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: flex-start; }
+  main .menu {
+    width: 25%;
+    height: 100vh;
     background: #750000;
-    margin: 0;
-    text-align: center;
-    height: 30px;
-    padding: 10px;
-    border-radius: 15px 15px 0px 0px;
-    line-height: 15px; }
-  main h4 {
-    color: #750000;
-    margin: 20px 0 30px 0;
-    text-align: center;
-    height: 20px;
-    padding: 10px;
-    font-size: 18px; }
-  main label {
-    margin: 0px 30px 20px 0px;
-    padding: 0 0 30px 27%; }
-  main .verificar {
-    margin: 0px 0px 10px 4%;
-    padding: 0 0 00px 0; }
-  main p {
-    margin: 0px 30px 20px 30px; }
-  main select {
-    margin: 0px 0px 0px 33%;
-    font-size: 14px;
-    padding: 5px;
-    text-align: center; }
-  main .selectVersion {
-    margin: 0px 0px 0px 42%;
-    font-size: 14px;
-    padding: 5px 20px 5px 20px;
-    text-align: center; }
-  main .selectEvaluador {
-    margin: 0px 0px 20px 34%;
-    font-size: 14px;
-    padding: 5px 20px 5px 20px;
-    text-align: center; }
-  main .comentario {
-    min-height: 50px;
-    max-height: 50px;
-    min-width: 40%;
-    max-width: 40%;
-    background: white;
-    margin: 0px 0 0px 2%;
-    font-size: 14px;
-    padding: 5px;
-    color: black;
-    text-align: justify; }
-  main input[type="date"] {
-    padding: 5px;
-    text-align: center;
-    margin: 15px 0 15px 3%;
-    font-size: 14px; }
-  main input[type="time"] {
-    padding: 5px;
-    text-align: center;
-    margin: 15px 0 15px 3%;
-    font-size: 14px; }
-  main input[type="checkbox"] {
-    padding: 5px;
-    text-align: justify;
-    margin: 10px 0 10px 35%;
-    font-size: 14px; }
-  main .verAutoevaluacion {
-    padding: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start; }
+    color: white; }
+    main .menu ul {
+      position: fixed;
+      background: #750000;
+      height: 100vh;
+      width: 25vw;
+      list-style: none; }
+      main .menu ul li {
+        font-size: 24px;
+        margin: 10px 0;
+        padding: 10px;
+        color: white;
+        cursor: pointer; }
+  main .contenido {
+    width: 75%; }
+    main .contenido .cuadro {
+      border: 1px solid #750000;
+      width: 80%;
+      margin: 15px auto 50px auto;
+      border-radius: 15px;
+      padding: 0px 0px 25px 0; }
+    main .contenido .descripcion {
+      width: 80%;
+      margin: 20px auto 30px auto;
+      padding: 0 0 0 5px; }
+    main .contenido h2 {
+      font-size: 28px;
+      width: 100%;
+      max-height: 50px;
+      margin: 50px 0% 30px 0%;
+      text-align: center; }
+    main .contenido h3 {
+      color: white;
+      background: #750000;
+      margin: 0;
+      text-align: center;
+      height: 30px;
+      padding: 10px;
+      border-radius: 15px 15px 0px 0px;
+      line-height: 15px; }
+    main .contenido h4 {
+      color: #750000;
+      margin: 20px 0 30px 0;
+      text-align: center;
+      height: 20px;
+      padding: 10px;
+      font-size: 18px; }
+    main .contenido label {
+      margin: 0px 30px 20px 0px;
+      padding: 0 0 30px 27%; }
+    main .contenido .verificar {
+      margin: 0px 0px 10px 4%;
+      padding: 0 0 00px 0; }
+    main .contenido p {
+      margin: 0px 30px 20px 30px; }
+    main .contenido select {
+      margin: 0px 0px 0px 33%;
+      font-size: 14px;
+      padding: 5px;
+      text-align: center; }
+    main .contenido .selectVersion {
+      margin: 0px 0px 0px 42%;
+      font-size: 14px;
+      padding: 5px 20px 5px 20px;
+      text-align: center; }
+    main .contenido .selectEvaluador {
+      margin: 0px 0px 20px 34%;
+      font-size: 14px;
+      padding: 5px 20px 5px 20px;
+      text-align: center; }
+    main .contenido .comentario {
+      min-height: 50px;
+      max-height: 50px;
+      min-width: 40%;
+      max-width: 40%;
+      background: white;
+      margin: 0px 0 0px 2%;
+      font-size: 14px;
+      padding: 5px;
+      color: black;
+      text-align: justify; }
+    main .contenido input[type="date"] {
+      padding: 5px;
+      text-align: center;
+      margin: 15px 0 15px 3%;
+      font-size: 14px; }
+    main .contenido input[type="time"] {
+      padding: 5px;
+      text-align: center;
+      margin: 15px 0 15px 3%;
+      font-size: 14px; }
+    main .contenido input[type="checkbox"] {
+      padding: 5px;
+      text-align: justify;
+      margin: 10px 0 10px 35%;
+      font-size: 14px; }
+    main .contenido .verAutoevaluacion {
+      padding: 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start; }

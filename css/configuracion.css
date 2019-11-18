@@ -33,6 +33,24 @@ body {
   .primary:hover {
     opacity: 0.75; }
 
+.secondary {
+  background: #750000;
+  color: white; }
+  .secondary:hover {
+    opacity: 0.75; }
+
+.tertiary {
+  width: 80px;
+  height: 30px;
+  border: 1px solid rgba(117, 0, 0, 0.5);
+  font-size: 14px;
+  background: white;
+  color: #750000;
+  text-decoration: none;
+  margin: 0px 0 10px 20px; }
+  .tertiary:hover {
+    opacity: 0.50; }
+
 * {
   margin: 0;
   padding: 0;
@@ -68,8 +86,27 @@ body {
   .primary:hover {
     opacity: 0.75; }
 
+.secondary {
+  background: #750000;
+  color: white; }
+  .secondary:hover {
+    opacity: 0.75; }
+
+.tertiary {
+  width: 80px;
+  height: 30px;
+  border: 1px solid rgba(117, 0, 0, 0.5);
+  font-size: 14px;
+  background: white;
+  color: #750000;
+  text-decoration: none;
+  margin: 0px 0 10px 20px; }
+  .tertiary:hover {
+    opacity: 0.50; }
+
 header {
   position: fixed;
+  z-index: 10;
   width: 100%;
   height: 60px;
   background: rgba(0, 0, 0, 0.75); }
@@ -128,17 +165,36 @@ body {
   .primary:hover {
     opacity: 0.75; }
 
+.secondary {
+  background: #750000;
+  color: white; }
+  .secondary:hover {
+    opacity: 0.75; }
+
+.tertiary {
+  width: 80px;
+  height: 30px;
+  border: 1px solid rgba(117, 0, 0, 0.5);
+  font-size: 14px;
+  background: white;
+  color: #750000;
+  text-decoration: none;
+  margin: 0px 0 10px 20px; }
+  .tertiary:hover {
+    opacity: 0.50; }
+
 footer {
   position: relative;
   z-index: 1000;
   bottom: 0;
   width: 100%;
   height: 150px;
-  background: #2b2929;
+  background: #750000;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 25px; }
+  padding: 25px;
+  border-top: 5px solid white; }
   footer .logo {
     width: 35%;
     height: 100%;
@@ -176,207 +232,293 @@ footer {
 .btn {
   margin: 15px 0 15px auto; }
 
-.newUsuario {
-  width: 90%;
-  margin: 25px 5%;
-  border: 1px solid #750000;
-  border-radius: 15px;
+main {
   display: flex;
+  flex-flow: wrap row;
   justify-content: space-between;
-  flex-flow: row wrap;
-  padding: 15px; }
-  .newUsuario h2 {
-    padding: 25px;
-    text-align: center;
-    width: 100%;
-    color: #750000; }
-  .newUsuario .perfil {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    padding: 15px; }
-    .newUsuario .perfil h3 {
-      padding: 15px;
-      text-align: center;
-      width: 100%; }
-    .newUsuario .perfil label {
-      width: 30%; }
-    .newUsuario .perfil input {
-      width: 70%;
-      margin: 5px 0;
-      padding: 5px 10px; }
-  .newUsuario .universidad {
-    width: 50%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-flow: row wrap;
-    padding: 15px; }
-    .newUsuario .universidad h2 {
-      padding: 25px;
-      text-align: center;
-      width: 100%; }
-    .newUsuario .universidad h3 {
-      padding: 15px;
-      text-align: center;
-      width: 100%; }
-    .newUsuario .universidad label {
-      width: 30%; }
-    .newUsuario .universidad input {
-      width: 70%;
-      margin: 5px 0;
-      padding: 5px 10px; }
-  .newUsuario .control {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end; }
-
-.recover {
-  width: 90%;
-  margin: 25px 5%;
-  border: 1px solid #750000;
-  border-radius: 15px;
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-  padding: 15px; }
-  .recover h2 {
-    padding: 25px;
-    text-align: center;
-    width: 100%;
-    color: #750000; }
-  .recover .reset {
-    width: 70%;
-    margin: 15px 12.5%;
-    display: flex;
-    flex-flow: row wrap; }
-    .recover .reset h3 {
-      padding: 15px;
-      text-align: center;
-      width: 100%; }
-    .recover .reset label {
-      display: inline-block;
-      width: 30%; }
-    .recover .reset input {
-      width: 70%;
-      margin: 5px 0;
-      padding: 5px 10px; }
-  .recover .control {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end; }
-
-.chanceUsuario {
-  width: 90%;
-  margin: 25px 5%;
-  border: 1px solid #750000;
-  border-radius: 15px;
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-  padding: 15px; }
-  .chanceUsuario h2 {
-    padding: 25px;
-    text-align: center;
-    width: 100%;
-    color: #750000; }
-  .chanceUsuario ul {
-    list-style: none;
-    width: 60%;
-    margin: 15px 20%;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    padding: 5px; }
-    .chanceUsuario ul li {
-      border: 1px solid rgba(0, 0, 0, 0.25);
-      padding: 5px; }
-      .chanceUsuario ul li .titulos {
-        color: #750000;
-        font-size: 20px; }
-        .chanceUsuario ul li .titulos span {
-          display: inline-block; }
-        .chanceUsuario ul li .titulos .numero {
-          width: 5%; }
-        .chanceUsuario ul li .titulos .nombre {
-          width: 70%; }
-        .chanceUsuario ul li .titulos .clase {
-          width: 25%; }
-      .chanceUsuario ul li .usuario span {
-        display: inline-block; }
-      .chanceUsuario ul li .usuario .numero {
-        width: 5%; }
-      .chanceUsuario ul li .usuario .nombre {
-        width: 70%; }
-      .chanceUsuario ul li .usuario .clase {
-        width: 25%; }
-  .chanceUsuario .cambio {
-    width: 90%;
-    margin: 25px 5%;
-    display: flex;
-    flex-flow: row wrap; }
-    .chanceUsuario .cambio label {
-      display: inline-block;
-      width: 20%;
-      margin: 5px 0;
-      padding: 5px; }
-    .chanceUsuario .cambio input, .chanceUsuario .cambio select {
-      width: 30%;
-      padding: 5px;
-      margin: 5px 0;
-      padding: 5px; }
-  .chanceUsuario .control {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end; }
-
-.chancePermiso {
-  width: 90%;
-  margin: 25px 5%;
-  border: 1px solid #750000;
-  border-radius: 15px;
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-  padding: 15px; }
-  .chancePermiso h2 {
-    padding: 25px;
-    text-align: center;
-    width: 100%;
-    color: #750000; }
-  .chancePermiso ul {
-    list-style: none;
-    width: 60%;
-    margin: 15px 20%;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    padding: 5px; }
-    .chancePermiso ul li {
-      width: 100%;
-      border: 1px solid rgba(0, 0, 0, 0.25); }
-      .chancePermiso ul li .titulos {
-        color: #750000;
-        font-size: 20px;
+  align-items: flex-start; }
+  main .menu {
+    width: 25%;
+    height: 100vh;
+    background: #750000;
+    color: white; }
+    main .menu ul {
+      position: fixed;
+      background: #750000;
+      height: 100vh;
+      width: 25vw;
+      list-style: none; }
+      main .menu ul li {
+        font-size: 24px;
+        margin: 10px 0;
+        padding: 10px;
+        color: white;
+        cursor: pointer; }
+  main .contenido {
+    width: 75%; }
+    main .contenido .usuarios {
+      width: 90%;
+      margin: 25px 5%;
+      border: 1px solid #750000;
+      border-radius: 15px;
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+      padding: 15px; }
+      main .contenido .usuarios h2 {
+        padding: 25px;
+        text-align: center;
+        width: 100%;
+        color: #750000; }
+      main .contenido .usuarios ul {
+        list-style: none;
+        width: 90%;
+        margin: 15px 5%;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        padding: 5px; }
+        main .contenido .usuarios ul li {
+          border: 1px solid rgba(0, 0, 0, 0.25);
+          padding: 5px; }
+          main .contenido .usuarios ul li .titulos {
+            color: #750000;
+            font-size: 20px; }
+            main .contenido .usuarios ul li .titulos span {
+              display: inline-block; }
+            main .contenido .usuarios ul li .titulos .numero {
+              width: 5%; }
+            main .contenido .usuarios ul li .titulos .nombre {
+              width: 35%; }
+            main .contenido .usuarios ul li .titulos .universidad {
+              width: 35%; }
+            main .contenido .usuarios ul li .titulos .clase {
+              width: 25%; }
+          main .contenido .usuarios ul li .usuario span {
+            display: inline-block; }
+          main .contenido .usuarios ul li .usuario .numero {
+            width: 5%; }
+          main .contenido .usuarios ul li .usuario .nombre {
+            width: 35%; }
+          main .contenido .usuarios ul li .usuario .universidad {
+            width: 35%; }
+          main .contenido .usuarios ul li .usuario .clase {
+            width: 25%; }
+      main .contenido .usuarios .cambio {
+        width: 90%;
+        margin: 25px 5%;
         display: flex;
         flex-flow: row wrap; }
-        .chancePermiso ul li .titulos span {
+        main .contenido .usuarios .cambio label {
           display: inline-block;
-          width: 25%;
+          width: 20%;
+          margin: 5px 0;
+          padding: 5px; }
+        main .contenido .usuarios .cambio input, main .contenido .usuarios .cambio select {
+          width: 30%;
           padding: 5px;
-          text-align: center; }
-      .chancePermiso ul li .permiso {
+          margin: 5px 0;
+          padding: 5px; }
+      main .contenido .usuarios .control {
+        width: 100%;
         display: flex;
+        justify-content: flex-end; }
+    main .contenido .newUsuario {
+      width: 90%;
+      margin: 25px 5%;
+      border: 1px solid #750000;
+      border-radius: 15px;
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+      padding: 15px; }
+      main .contenido .newUsuario h2 {
+        padding: 25px;
+        text-align: center;
+        width: 100%;
+        color: #750000; }
+      main .contenido .newUsuario .perfil {
+        width: 50%;
+        display: flex;
+        justify-content: center;
         flex-flow: row wrap;
-        align-items: center;
-        justify-content: center; }
-        .chancePermiso ul li .permiso span {
+        align-items: flex-start;
+        padding: 15px; }
+        main .contenido .newUsuario .perfil h3 {
+          padding: 15px;
+          text-align: center;
+          width: 100%; }
+        main .contenido .newUsuario .perfil label {
+          width: 30%; }
+        main .contenido .newUsuario .perfil input {
+          width: 70%;
+          margin: 5px 0;
+          padding: 5px 10px; }
+      main .contenido .newUsuario .universidad {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-flow: row wrap;
+        padding: 15px; }
+        main .contenido .newUsuario .universidad h2 {
+          padding: 25px;
+          text-align: center;
+          width: 100%; }
+        main .contenido .newUsuario .universidad h3 {
+          padding: 15px;
+          text-align: center;
+          width: 100%; }
+        main .contenido .newUsuario .universidad label {
+          width: 30%; }
+        main .contenido .newUsuario .universidad input {
+          width: 70%;
+          margin: 5px 0;
+          padding: 5px 10px; }
+      main .contenido .newUsuario .control {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end; }
+    main .contenido .recover {
+      width: 90%;
+      margin: 25px 5%;
+      border: 1px solid #750000;
+      border-radius: 15px;
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+      padding: 15px; }
+      main .contenido .recover h2 {
+        padding: 25px;
+        text-align: center;
+        width: 100%;
+        color: #750000; }
+      main .contenido .recover .reset {
+        width: 70%;
+        margin: 15px 12.5%;
+        display: flex;
+        flex-flow: row wrap; }
+        main .contenido .recover .reset h3 {
+          padding: 15px;
+          text-align: center;
+          width: 100%; }
+        main .contenido .recover .reset label {
           display: inline-block;
-          width: 25%;
+          width: 30%; }
+        main .contenido .recover .reset input {
+          width: 70%;
+          margin: 5px 0;
+          padding: 5px 10px; }
+      main .contenido .recover .control {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end; }
+    main .contenido .chanceUsuario {
+      width: 90%;
+      margin: 25px 5%;
+      border: 1px solid #750000;
+      border-radius: 15px;
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+      padding: 15px; }
+      main .contenido .chanceUsuario h2 {
+        padding: 25px;
+        text-align: center;
+        width: 100%;
+        color: #750000; }
+      main .contenido .chanceUsuario ul {
+        list-style: none;
+        width: 60%;
+        margin: 15px 20%;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        padding: 5px; }
+        main .contenido .chanceUsuario ul li {
+          border: 1px solid rgba(0, 0, 0, 0.25);
           padding: 5px; }
-        .chancePermiso ul li .permiso input {
+          main .contenido .chanceUsuario ul li .titulos {
+            color: #750000;
+            font-size: 20px; }
+            main .contenido .chanceUsuario ul li .titulos span {
+              display: inline-block; }
+            main .contenido .chanceUsuario ul li .titulos .numero {
+              width: 5%; }
+            main .contenido .chanceUsuario ul li .titulos .nombre {
+              width: 70%; }
+            main .contenido .chanceUsuario ul li .titulos .clase {
+              width: 25%; }
+          main .contenido .chanceUsuario ul li .usuario span {
+            display: inline-block; }
+          main .contenido .chanceUsuario ul li .usuario .numero {
+            width: 5%; }
+          main .contenido .chanceUsuario ul li .usuario .nombre {
+            width: 70%; }
+          main .contenido .chanceUsuario ul li .usuario .clase {
+            width: 25%; }
+      main .contenido .chanceUsuario .cambio {
+        width: 90%;
+        margin: 25px 5%;
+        display: flex;
+        flex-flow: row wrap; }
+        main .contenido .chanceUsuario .cambio label {
           display: inline-block;
-          width: 25%;
+          width: 20%;
+          margin: 5px 0;
           padding: 5px; }
-  .chancePermiso .control {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end; }
+        main .contenido .chanceUsuario .cambio input, main .contenido .chanceUsuario .cambio select {
+          width: 30%;
+          padding: 5px;
+          margin: 5px 0;
+          padding: 5px; }
+      main .contenido .chanceUsuario .control {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end; }
+    main .contenido .chancePermiso {
+      width: 90%;
+      margin: 25px 5%;
+      border: 1px solid #750000;
+      border-radius: 15px;
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+      padding: 15px; }
+      main .contenido .chancePermiso h2 {
+        padding: 25px;
+        text-align: center;
+        width: 100%;
+        color: #750000; }
+      main .contenido .chancePermiso ul {
+        list-style: none;
+        width: 60%;
+        margin: 15px 20%;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        padding: 5px; }
+        main .contenido .chancePermiso ul li {
+          width: 100%;
+          border: 1px solid rgba(0, 0, 0, 0.25); }
+          main .contenido .chancePermiso ul li .titulos {
+            color: #750000;
+            font-size: 20px;
+            display: flex;
+            flex-flow: row wrap; }
+            main .contenido .chancePermiso ul li .titulos span {
+              display: inline-block;
+              width: 25%;
+              padding: 5px;
+              text-align: center; }
+          main .contenido .chancePermiso ul li .permiso {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center; }
+            main .contenido .chancePermiso ul li .permiso span {
+              display: inline-block;
+              width: 25%;
+              padding: 5px; }
+            main .contenido .chancePermiso ul li .permiso input {
+              display: inline-block;
+              width: 25%;
+              padding: 5px; }
+      main .contenido .chancePermiso .control {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end; }
