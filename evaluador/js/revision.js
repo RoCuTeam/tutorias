@@ -4,6 +4,9 @@ function presentacion(){
               '<div class="avance">'+
                 '<p>Porcentaje de avance: 20% completado</p>'+
                 '<div class="barra"><span class="color veinte"></span></div>'+
+                '<div class="guardarEnviar">'+
+                  '<button class="btn" type="button" name="button" disabled>Enviar</button>'+
+                '</div>'+
               '</div>'+
               '<article class="">'+
                 '<p>'+
