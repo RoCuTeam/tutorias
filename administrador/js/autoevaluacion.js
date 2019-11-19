@@ -2,7 +2,7 @@
 function presentacion(){
   var cont = '<h2>Guía para el autoestudio y validación de pares de los Programas Institucionales de Tutoría.</h2>'+
     	       '<div class="avance">'+
-               '<p>Porcentaje de avance: 50% completo</p>'+
+               '<p>Porcentaje de avance: 50% completado</p>'+
                '<div class="barra"><span class="color cincuenta"></span></div>'+
               '</div>'+
               '<article class="">'+
@@ -19,7 +19,7 @@ function presentacion(){
                   'La estructura del documento está dividida en siete ejes con un total de 33 rubros a analizar distribuidos de la siguiente forma:'+
                 '</p>'+
               '</article>'+
-              '<img src="../img/ejes.png" alt="Ejes autoevaluación PIT" title="Ejes autoevaluacion PIT" width="500px" height="auto">';
+              '<img src="../img/ejes.png" alt="Ejes autoevaluación PIT" title="Ejes autoevaluación PIT" width="500px" height="auto">';
 
   var contenido = document.getElementById("contenido");
   contenido.innerHTML = cont;
@@ -29,7 +29,7 @@ function eje1(){
   var cont="";
   cont += "       <h2>Fundamentos y condiciones de operación</h2>";
   cont += '       <div class="avance">';
-  cont += '           <p>Porcentaje de avance: 90% completo</p>';
+  cont += '           <p>Porcentaje de avance: 90% completado</p>';
   cont += '           <div class="barra"><span class="color noventa"></span></div>';
   cont += '        </div>';
   cont += "        <div class=\"botones-save\">";
@@ -108,7 +108,7 @@ function eje1(){
   cont += "          <h4 class=\"subeje opcional\">1.4 Opcional </h4>";
   cont += "          <h5 >A) Descripción</h5>";
   cont += "          <label for=\"1.4.a.1\">Describa si existe algún otro elemento importante que describa el contexto de la IES: </label>";
-  cont += "          <textarea name=\"elementoIES\" id=\"1.4.a.1\" placeholder=\"Información Adicional...\"></textarea>";
+  cont += "          <textarea name=\"elementoIES\" id=\"1.4.a.1\" placeholder=\"Información adicional...\"></textarea>";
   cont += "";
   cont += "          <h5 >B) Documentos</h5>";
   cont += "          <label class=\"lab-documentos\" for=\"1.4.b.1\"><i class=\"far fa-file-alt\"></i> Adjuntar documentos (en caso de existir)</label>";
@@ -130,7 +130,7 @@ function eje2(){
   var cont="";
   cont += "<h2>Gobierno y liderazgo</h2>";
   cont += '       <div class="avance">';
-  cont += '           <p>Porcentaje de avance: 70% completo</p>';
+  cont += '           <p>Porcentaje de avance: 70% completado</p>';
   cont += '           <div class="barra"><span class="color setenta"></span></div>';
   cont += '        </div>';
   cont += "        <!--Agregar form-->";
@@ -160,7 +160,7 @@ function eje2(){
   cont += "        <section class=\"formulario\" id=\"formulario2.2\">";
   cont += "          <h4 class=\"subeje obligatorio\">2.2 Marco normativo</h4>";
   cont += "          <h5 >A) Descripción</h5>";
-  cont += "          <label for=\"2.2.a.1\">Indicar los marcos de referencia formales que dan sustento al PIT en su institución tanto, nacionales, estatales o locales (Modelo educativo, modelo académico, guías de diseño o rediseño curricular, normatividad institucional, plan de desarrollo, reglamentos, planes institucionales, políticas nacionales, estatales, etcétera).</label>";
+  cont += "          <label for=\"2.2.a.1\">Indicar los marcos de referencia formales que dan sustento al PIT en su institución tanto, nacionales, estatales o locales (modelo educativo, modelo académico, guías de diseño o rediseño curricular, normatividad institucional, plan de desarrollo, reglamentos, planes institucionales, políticas nacionales, estatales, etcétera).</label>";
   cont += "          <textarea name=\"descripcion\" id=\"2.2.a.1\" placeholder=\"Descripción...\"></textarea>";
   cont += "";
   cont += "          <h5 >B) Documentos</h5>";
@@ -225,7 +225,7 @@ function eje3(){
   var cont="";
   cont += "<h2>Planificación</h2>";
   cont += '       <div class="avance">';
-  cont += '           <p>Porcentaje de avance: 80% completo</p>';
+  cont += '           <p>Porcentaje de avance: 80% completado</p>';
   cont += '           <div class="barra"><span class="color ochenta"></span></div>';
   cont += '        </div>';
   cont += "        <!--Agregar form-->";
@@ -294,8 +294,8 @@ function eje3(){
   cont += "        <section class=\"formulario\" id=\"formulario3.4\">";
   cont += "          <h4 class=\"subeje opcional\">3.4 Opcional </h4>";
   cont += "          <h5 >A) Descripción</h5>";
-  cont += "          <label for=\"3.4.a.1\">Describa si existe algún otro aspecto importante relacionado con planificación. <br/>Por ejemplo, si han incluido tendencias relacionadas con Responsabilidad Social Universitaria, Cultura de la legalidad, enfoque a grupos vulnerables, cuidado del medio ambiente o sustentabilidad.</label>";
-  cont += "          <textarea name=\"aspectoPlan\" id=\"3.4.a.1\" placeholder=\"Información Adicional...\"></textarea>";
+  cont += "          <label for=\"3.4.a.1\">Describa si existe algún otro aspecto importante relacionado con planificación. <br/>Por ejemplo, si han incluido tendencias relacionadas con Responsabilidad Social Universitaria, cultura de la legalidad, enfoque a grupos vulnerables, cuidado del medio ambiente o sustentabilidad.</label>";
+  cont += "          <textarea name=\"aspectoPlan\" id=\"3.4.a.1\" placeholder=\"Información adicional...\"></textarea>";
   cont += "";
   cont += "          <h5 >B) Documentos</h5>";
   cont += "          <label class=\"lab-documentos\" for=\"3.4.b.1\"><i class=\"far fa-file-alt\"></i> Adjuntar documentos (en caso de existir)</label>";
@@ -317,7 +317,7 @@ function eje4(){
   var cont="";
   cont += "<h2>Soporte</h2>";
   cont += '       <div class="avance">';
-  cont += '           <p>Porcentaje de avance: 100% completo</p>';
+  cont += '           <p>Porcentaje de avance: 100% completado</p>';
   cont += '           <div class="barra"><span class="color cien"></span></div>';
   cont += '        </div>';
   cont += "        <!--Agregar form-->";
@@ -378,7 +378,7 @@ function eje4(){
   cont += "          <textarea name=\"descripcion\" id=\"4.4.a.1\" placeholder=\"Descripción...\"></textarea>";
   cont += "          <label for=\"4.4.a.2\">Mencione qué medios se utilizan y cómo se realiza la comunicación entre los diferentes actores y niveles del PIT resaltando la comunicación con los alumnos.</label>";
   cont += "          <textarea name=\"descripcion\" id=\"4.4.a.2\" placeholder=\"Descripción...\"></textarea>";
-  cont += "          <label for=\"4.4.a.3\">Mencioné las innovaciones implementadas en los últimos años en cuanto a tecnología y comunicación y si en qué medida han aportado mejoras al PIT.</label>";
+  cont += "          <label for=\"4.4.a.3\">Mencioné las innovaciones implementadas en los últimos años en cuanto a tecnología y comunicación y en qué medida han aportado mejoras al PIT.</label>";
   cont += "          <textarea name=\"descripcion\" id=\"4.4.a.3\" placeholder=\"Descripción...\"></textarea>";
   cont += "";
   cont += "          <h5 >B) Documentos</h5>";
@@ -447,7 +447,7 @@ function eje5(){
   var cont="";
   cont += "<h2>Operación</h2>";
   cont += '       <div class="avance">';
-  cont += '           <p>Porcentaje de avance: 40% completo</p>';
+  cont += '           <p>Porcentaje de avance: 40% completado</p>';
   cont += '           <div class="barra"><span class="color cuarenta"></span></div>';
   cont += '        </div>';
   cont += "        <!--Agregar form-->";
@@ -516,7 +516,7 @@ function eje5(){
   cont += "          <h4 class=\"subeje opcional\">5.4 Operación del Programa</h4>";
   cont += "          <h5 >A) Descripción</h5>";
   cont += "          <label for=\"5.4.a.1\">Describa si existe algún otro aspecto relevante a mencionar en cuanto a la operación del programa de tutoría: </label>";
-  cont += "          <textarea name=\"aspectoOpe\" id=\"5.4.a.1\" placeholder=\"Información Adicional...\"></textarea>";
+  cont += "          <textarea name=\"aspectoOpe\" id=\"5.4.a.1\" placeholder=\"Información adicional...\"></textarea>";
   cont += "";
   cont += "          <h5 >B) Documentos</h5>";
   cont += "          <label class=\"lab-documentos\" for=\"5.4.b.1\"><i class=\"far fa-file-alt\"></i> Adjuntar documentos (en caso de existir)</label>";
@@ -538,7 +538,7 @@ function eje6(){
   var cont="";
   cont += "        <h2>Evaluación del desempeño<\/h2>";
   cont += '       <div class="avance">';
-  cont += '           <p>Porcentaje de avance: 0% completo</p>';
+  cont += '           <p>Porcentaje de avance: 0% completado</p>';
   cont += '           <div class="barra"><span class="color cero"></span></div>';
   cont += '        </div>';
   cont += "        <!--Agregar form-->";
@@ -599,9 +599,9 @@ function eje6(){
   cont += "          <textarea name=\"adicional\" id=\"6.3.c.1\" placeholder=\"Información adicional...\"><\/textarea>";
   cont += "        <\/section>";
   cont += "        <section class=\"formulario\" id=\"formulario6.4\">";
-  cont += "          <h4 class=\"subeje deseable\">6.4 Auditoria interna<\/h4>";
+  cont += "          <h4 class=\"subeje deseable\">6.4 Auditoría interna<\/h4>";
   cont += "          <h5 >A) Descripción<\/h5>";
-  cont += "          <label for=\"6.4.a.1\">Describa si la IES cuenta con un proceso de auditoria interna para evaluar el PIT.<\/label>";
+  cont += "          <label for=\"6.4.a.1\">Describa si la IES cuenta con un proceso de auditoría interna para evaluar el PIT.<\/label>";
   cont += "          <textarea name=\"descripcion\" id=\"6.4.a.1\" placeholder=\"Descripción...\"><\/textarea>";
   cont += "";
   cont += "          <h5 >B) Documentos<\/h5>";
@@ -639,7 +639,7 @@ function eje7(){
   var cont="";
   cont += "<h2>Mejora continua<\/h2>";
   cont += '       <div class="avance">';
-  cont += '           <p>Porcentaje de avance: 20% completo</p>';
+  cont += '           <p>Porcentaje de avance: 20% completado</p>';
   cont += '           <div class="barra"><span class="color veinte"></span></div>';
   cont += '        </div>';
   cont += "        <!--Agregar form-->";
