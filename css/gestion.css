@@ -302,15 +302,17 @@ main {
       padding: 10px;
       font-size: 18px; }
     main .contenido label {
-      margin: 0px 30px 20px 0px;
-      padding: 0 0 30px 27%; }
+      display: inline-block;
+      width: 25%;
+      margin: 10px 5%;
+      height: auto; }
     main .contenido .verificar {
       margin: 0px 0px 10px 4%;
       padding: 0 0 00px 0; }
     main .contenido p {
       margin: 0px 30px 20px 30px; }
     main .contenido select {
-      margin: 0px 0px 0px 33%;
+      margin: 10px 5%;
       font-size: 14px;
       padding: 5px;
       text-align: center; }
@@ -326,9 +328,9 @@ main {
       text-align: center; }
     main .contenido .comentario {
       min-height: 50px;
-      max-height: 50px;
-      min-width: 40%;
-      max-width: 40%;
+      max-height: 100px;
+      min-width: 60%;
+      max-width: 60%;
       background: white;
       margin: 0px 0 0px 2%;
       font-size: 14px;
@@ -338,17 +340,17 @@ main {
     main .contenido input[type="date"] {
       padding: 5px;
       text-align: center;
-      margin: 15px 0 15px 3%;
+      margin: 5px;
       font-size: 14px; }
     main .contenido input[type="time"] {
       padding: 5px;
+      margin: 5px;
       text-align: center;
-      margin: 15px 0 15px 9%;
       font-size: 14px; }
     main .contenido input[type="checkbox"] {
       padding: 5px;
       text-align: justify;
-      margin: 10px 0 10px 35%;
+      margin: 5px 5px 5px 5%;
       font-size: 14px; }
     main .contenido .verAutoevaluacion {
       padding: 0;

@@ -262,7 +262,7 @@ function eje2(){
   cont += "<h2>Gobierno y liderazgo</h2>";
   cont += '        <div class="avance">';
   cont += '           <p>Porcentaje de avance: 20% completado</p>';
-  cont += '           <div class="barra"><span class="color cuarenta"></span></div>';
+  cont += '           <div class="barra"><span class="color veinte"></span></div>';
   cont += '        </div>';
   cont += "        <!--Agregar form-->";
   cont += "        <div class=\"botones-save\">";
