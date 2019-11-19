@@ -2,7 +2,7 @@
 function presentacion(){
   var cont = '<h2>Revisión del autoestudio y validación de pares de los Programas Institucionales de Tutoría.</h2>'+
               '<div class="avance">'+
-                '<p>Porcentaje de avance: 20% completo</p>'+
+                '<p>Porcentaje de avance: 20% completado</p>'+
                 '<div class="barra"><span class="color veinte"></span></div>'+
               '</div>'+
               '<article class="">'+
@@ -29,7 +29,7 @@ function eje1(){
   var cont="";
   cont += "<h2>Fundamentos y condiciones de operación</h2>";
   cont += '        <div class="avance">';
-  cont += '           <p>Porcentaje de avance: 40% completo</p>';
+  cont += '           <p>Porcentaje de avance: 40% completado</p>';
   cont += '           <div class="barra"><span class="color cuarenta"></span></div>';
   cont += '        </div>';
   cont += "        <div class=\"botones-save\">";
@@ -261,13 +261,13 @@ function eje2(){
   var cont="";
   cont += "<h2>Gobierno y liderazgo</h2>";
   cont += '        <div class="avance">';
-  cont += '           <p>Porcentaje de avance: 20% completo</p>';
+  cont += '           <p>Porcentaje de avance: 20% completado</p>';
   cont += '           <div class="barra"><span class="color veinte"></span></div>';
   cont += '        </div>';
+  cont += "        <!--Agregar form-->";
   cont += "        <div class=\"botones-save\">";
   cont += "          <button type=\"button\" name=\"button\" class=\"btn btn-save\"><i class=\"fas fa-save\"></i> Guardar</button>";
   cont += "        </div>";
-  cont += "        <!--Agregar form-->";
   cont += "        <section class=\"formulario\" id=\"formulario2.1\">";
   cont += "          <h4 class=\"subeje obligatorio\">2.1 Roles, responsabilidades y autoridades</h4>";
   cont += "          <h5 >A) Descripción</h5>";
@@ -284,7 +284,7 @@ function eje2(){
   cont += "           <button type=\"button\" name=\"button\" class=\"btn teartiary\"> Enviar</button>";
   cont += "          </div>";
   cont += "          <label for=\"2.1.a.3\">Detalle los roles y responsabilidades de la alta dirección  (consejo universitario, consejo directivo, dirección general, junta de gobierno o rectoría) así como de la secretaría académica, planeación o estructuras similares.</label>";
-  cont += "          <label for=\"2.1.a.3\" class=\"respuesta\">1. Consejo universitario: Verificar que los tutores y tutorados cumplan con sus labores correspondientes y corregir cualquier problema disciplinal o que incumpla con lo establecido. <br>2. Consejo directivo: Crea y actualiza nuevos métodos para la ejecución del Programa Institucional de Tutorías. <br>3. Dirección general: Resuelve conflictos menores correspondientes a tutores o tutorados. <br>4. Rectoría: Aprueba y supervisa el trabajo del organigrama inferior, para garantizar que las responsabilidades son ejecutadas satisfactoriamente. <br>5. Secretaría académica: Supervisa el trabajo de tutores con respecto a las necesidades de los tutorados. Les brinda a los alumnos el medio para comunicar sus inquietudes y problemas.  </label>";
+  cont += "          <label for=\"2.1.a.3\" class=\"respuesta\">1. Consejo universitario: Verificar que los tutores y tutorados cumplan con sus labores correspondientes y corregir cualquier problema disciplinal o que incumpla con lo establecido. <br>2. Consejo directivo: Crea y actualiza nuevos métodos para la ejecución del Programa Institucional de Tutoría. <br>3. Dirección general: Resuelve conflictos menores correspondientes a tutores o tutorados. <br>4. Rectoría: Aprueba y supervisa el trabajo del organigrama inferior, para garantizar que las responsabilidades son ejecutadas satisfactoriamente. <br>5. Secretaría académica: Supervisa el trabajo de tutores con respecto a las necesidades de los tutorados. Les brinda a los alumnos el medio para comunicar sus inquietudes y problemas.  </label>";
   cont += "          <textarea class=\"comentario\" name=\"comentario\" id=\"2.1.a.3\" placeholder=\"Agregar comentario...\"></textarea>";
   cont += "          <div class=\"btn_comentar\">";
   cont += "           <button type=\"button\" name=\"button\" class=\"btn teartiary\"> Enviar</button>";
@@ -316,7 +316,7 @@ function eje2(){
   cont += "        <section class=\"formulario\" id=\"formulario2.2\">";
   cont += "          <h4 class=\"subeje obligatorio\">2.2 Marco normativo</h4>";
   cont += "          <h5 >A) Descripción</h5>";
-  cont += "          <label for=\"2.2.a.1\">Indicar los marcos de referencia formales que dan sustento al PIT en su institución tanto, nacionales, estatales o locales (Modelo educativo, modelo académico, guías de diseño o rediseño curricular, normatividad institucional, plan de desarrollo, reglamentos, planes institucionales, políticas nacionales, estatales, etcétera).</label>";
+  cont += "          <label for=\"2.2.a.1\">Indicar los marcos de referencia formales que dan sustento al PIT en su institución tanto, nacionales, estatales o locales (modelo educativo, modelo académico, guías de diseño o rediseño curricular, normatividad institucional, plan de desarrollo, reglamentos, planes institucionales, políticas nacionales, estatales, etcétera).</label>";
   cont += "          <label for=\"2.2.a.1\" class=\"respuesta\">Los marcos de referencia que dan sustento al PIT son: <br>1. Modelo educativo. <br>2. Modelo académico. <br>3. Plan de desarrollo. <br>4. Reglamentos.</label>";
   cont += "          <textarea class=\"comentario\" name=\"comentario\" id=\"2.1.a.1\" placeholder=\"Agregar comentario...\"></textarea>";
   cont += "          <div class=\"btn_comentar\">";

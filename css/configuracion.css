@@ -7,6 +7,9 @@ body {
   font-family: sans-serif;
   font-size: 16px; }
 
+header nav ul a:hover {
+  background: rgba(117, 0, 0, 0.5); }
+
 .spacer {
   width: 100%;
   height: 60px; }
@@ -59,6 +62,9 @@ body {
 body {
   font-family: sans-serif;
   font-size: 16px; }
+
+header nav ul a:hover {
+  background: rgba(117, 0, 0, 0.5); }
 
 .spacer {
   width: 100%;
@@ -138,6 +144,9 @@ header {
 body {
   font-family: sans-serif;
   font-size: 16px; }
+
+header nav ul a:hover {
+  background: rgba(117, 0, 0, 0.5); }
 
 .spacer {
   width: 100%;
@@ -222,6 +231,8 @@ footer {
         list-style: none; }
         footer .identidad .contacto .contacto-info li {
           list-style: none; }
+        footer .identidad .contacto .contacto-info span {
+          padding: 20px; }
     footer .identidad .legal {
       display: flex;
       flex-flow: row wrap;
@@ -256,7 +267,7 @@ main {
         cursor: pointer; }
   main .contenido {
     width: 75%; }
-    main .contenido .usuarios {
+    main .contenido .usuarios, main .contenido .chanceUsuario {
       width: 90%;
       margin: 25px 5%;
       border: 1px solid #750000;
@@ -265,59 +276,59 @@ main {
       justify-content: space-between;
       flex-flow: row wrap;
       padding: 15px; }
-      main .contenido .usuarios h2 {
+      main .contenido .usuarios h2, main .contenido .chanceUsuario h2 {
         padding: 25px;
         text-align: center;
         width: 100%;
         color: #750000; }
-      main .contenido .usuarios ul {
+      main .contenido .usuarios ul, main .contenido .chanceUsuario ul {
         list-style: none;
         width: 90%;
         margin: 15px 5%;
         border: 1px solid rgba(0, 0, 0, 0.25);
         padding: 5px; }
-        main .contenido .usuarios ul li {
+        main .contenido .usuarios ul li, main .contenido .chanceUsuario ul li {
           border: 1px solid rgba(0, 0, 0, 0.25);
           padding: 5px; }
-          main .contenido .usuarios ul li .titulos {
+          main .contenido .usuarios ul li .titulos, main .contenido .chanceUsuario ul li .titulos {
             color: #750000;
             font-size: 20px; }
-            main .contenido .usuarios ul li .titulos span {
+            main .contenido .usuarios ul li .titulos span, main .contenido .chanceUsuario ul li .titulos span {
               display: inline-block; }
-            main .contenido .usuarios ul li .titulos .numero {
+            main .contenido .usuarios ul li .titulos .numero, main .contenido .chanceUsuario ul li .titulos .numero {
               width: 5%; }
-            main .contenido .usuarios ul li .titulos .nombre {
+            main .contenido .usuarios ul li .titulos .nombre, main .contenido .chanceUsuario ul li .titulos .nombre {
               width: 35%; }
-            main .contenido .usuarios ul li .titulos .universidad {
+            main .contenido .usuarios ul li .titulos .universidad, main .contenido .chanceUsuario ul li .titulos .universidad {
               width: 35%; }
-            main .contenido .usuarios ul li .titulos .clase {
+            main .contenido .usuarios ul li .titulos .clase, main .contenido .chanceUsuario ul li .titulos .clase {
               width: 25%; }
-          main .contenido .usuarios ul li .usuario span {
+          main .contenido .usuarios ul li .usuario span, main .contenido .chanceUsuario ul li .usuario span {
             display: inline-block; }
-          main .contenido .usuarios ul li .usuario .numero {
+          main .contenido .usuarios ul li .usuario .numero, main .contenido .chanceUsuario ul li .usuario .numero {
             width: 5%; }
-          main .contenido .usuarios ul li .usuario .nombre {
+          main .contenido .usuarios ul li .usuario .nombre, main .contenido .chanceUsuario ul li .usuario .nombre {
             width: 35%; }
-          main .contenido .usuarios ul li .usuario .universidad {
+          main .contenido .usuarios ul li .usuario .universidad, main .contenido .chanceUsuario ul li .usuario .universidad {
             width: 35%; }
-          main .contenido .usuarios ul li .usuario .clase {
+          main .contenido .usuarios ul li .usuario .clase, main .contenido .chanceUsuario ul li .usuario .clase {
             width: 25%; }
-      main .contenido .usuarios .cambio {
+      main .contenido .usuarios .cambio, main .contenido .chanceUsuario .cambio {
         width: 90%;
         margin: 25px 5%;
         display: flex;
         flex-flow: row wrap; }
-        main .contenido .usuarios .cambio label {
+        main .contenido .usuarios .cambio label, main .contenido .chanceUsuario .cambio label {
           display: inline-block;
           width: 20%;
           margin: 5px 0;
           padding: 5px; }
-        main .contenido .usuarios .cambio input, main .contenido .usuarios .cambio select {
+        main .contenido .usuarios .cambio input, main .contenido .usuarios .cambio select, main .contenido .chanceUsuario .cambio input, main .contenido .chanceUsuario .cambio select {
           width: 30%;
           padding: 5px;
           margin: 5px 0;
           padding: 5px; }
-      main .contenido .usuarios .control {
+      main .contenido .usuarios .control, main .contenido .chanceUsuario .control {
         width: 100%;
         display: flex;
         justify-content: flex-end; }
@@ -411,64 +422,22 @@ main {
         width: 100%;
         display: flex;
         justify-content: flex-end; }
-    main .contenido .chanceUsuario {
-      width: 90%;
-      margin: 25px 5%;
-      border: 1px solid #750000;
-      border-radius: 15px;
-      display: flex;
-      justify-content: space-between;
-      flex-flow: row wrap;
-      padding: 15px; }
-      main .contenido .chanceUsuario h2 {
-        padding: 25px;
-        text-align: center;
-        width: 100%;
-        color: #750000; }
-      main .contenido .chanceUsuario ul {
-        list-style: none;
-        width: 60%;
-        margin: 15px 20%;
-        border: 1px solid rgba(0, 0, 0, 0.25);
-        padding: 5px; }
-        main .contenido .chanceUsuario ul li {
-          border: 1px solid rgba(0, 0, 0, 0.25);
-          padding: 5px; }
-          main .contenido .chanceUsuario ul li .titulos {
-            color: #750000;
-            font-size: 20px; }
-            main .contenido .chanceUsuario ul li .titulos span {
-              display: inline-block; }
-            main .contenido .chanceUsuario ul li .titulos .numero {
-              width: 5%; }
-            main .contenido .chanceUsuario ul li .titulos .nombre {
-              width: 70%; }
-            main .contenido .chanceUsuario ul li .titulos .clase {
-              width: 25%; }
-          main .contenido .chanceUsuario ul li .usuario span {
-            display: inline-block; }
-          main .contenido .chanceUsuario ul li .usuario .numero {
-            width: 5%; }
-          main .contenido .chanceUsuario ul li .usuario .nombre {
-            width: 70%; }
-          main .contenido .chanceUsuario ul li .usuario .clase {
-            width: 25%; }
-      main .contenido .chanceUsuario .cambio {
+      main .contenido .recover .cambio {
         width: 90%;
         margin: 25px 5%;
         display: flex;
         flex-flow: row wrap; }
-        main .contenido .chanceUsuario .cambio label {
+        main .contenido .recover .cambio label {
           display: inline-block;
           width: 20%;
           margin: 5px 0;
           padding: 5px; }
-        main .contenido .chanceUsuario .cambio input, main .contenido .chanceUsuario .cambio select {
+        main .contenido .recover .cambio input, main .contenido .recover .cambio select {
           width: 30%;
           padding: 5px;
           margin: 5px 0;
           padding: 5px; }
-      main .contenido .chanceUsuario .control {
+      main .contenido .recover .control {
         width: 100%;
         display: flex;
         justify-content: flex-end; }

@@ -35,16 +35,16 @@
       <section class="menu">
         <ul>
           <li onclick="$('#ajAuto').fadeIn(0); $('#primRevAuto').fadeOut(0); $('#revAuto').fadeOut(0); $('#confAuto').fadeOut(0); $('#ajVis').fadeOut(0); $('#repFin').fadeOut(0);">Ajustes de autoevaluación</li>
-          <li onclick="$('#ajAuto').fadeOut(0); $('#primRevAuto').fadeIn(0); $('#revAuto').fadeOut(0); $('#confAuto').fadeOut(0); $('#ajVis').fadeOut(0); $('#repFin').fadeOut(0);">Primera revisión</li>
-          <li onclick="$('#ajAuto').fadeOut(0); $('#primRevAuto').fadeOut(0); $('#revAuto').fadeIn(0); $('#confAuto').fadeOut(0); $('#ajVis').fadeOut(0); $('#repFin').fadeOut(0);">Revisión a autoevaluación</li>
-          <li onclick="$('#ajAuto').fadeOut(0); $('#primRevAuto').fadeOut(0); $('#revAuto').fadeOut(0); $('#confAuto').fadeIn(0); $('#ajVis').fadeOut(0); $('#repFin').fadeOut(0);">Confirmación a revisión</li>
-          <li onclick="$('#ajAuto').fadeOut(0); $('#primRevAuto').fadeOut(0); $('#revAuto').fadeOut(0); $('#confAuto').fadeOut(0); $('#ajVis').fadeIn(0); $('#repFin').fadeOut(0);">Ajustes visita</li>
-          <li onclick="$('#ajAuto').fadeOut(0); $('#primRevAuto').fadeOut(0); $('#revAuto').fadeOut(0); $('#confAuto').fadeOut(0); $('#ajVis').fadeOut(0); $('#repFin').fadeIn(0);">Reporte final</li>
+          <li onclick="$('#ajAuto').fadeOut(0); $('#primRevAuto').fadeIn(0); $('#revAuto').fadeOut(0); $('#confAuto').fadeOut(0); $('#ajVis').fadeOut(0); $('#repFin').fadeOut(0);">Pre-revisión de autoevaluación</li>
+          <li onclick="$('#ajAuto').fadeOut(0); $('#primRevAuto').fadeOut(0); $('#revAuto').fadeIn(0); $('#confAuto').fadeOut(0); $('#ajVis').fadeOut(0); $('#repFin').fadeOut(0);">Revisión de autoevaluación</li>
+          <li onclick="$('#ajAuto').fadeOut(0); $('#primRevAuto').fadeOut(0); $('#revAuto').fadeOut(0); $('#confAuto').fadeIn(0); $('#ajVis').fadeOut(0); $('#repFin').fadeOut(0);">Confirmación de revisión</li>
+          <li onclick="$('#ajAuto').fadeOut(0); $('#primRevAuto').fadeOut(0); $('#revAuto').fadeOut(0); $('#confAuto').fadeOut(0); $('#ajVis').fadeIn(0); $('#repFin').fadeOut(0);">Ajustes de visita</li>
+          <li onclick="$('#ajAuto').fadeOut(0); $('#primRevAuto').fadeOut(0); $('#revAuto').fadeOut(0); $('#confAuto').fadeOut(0); $('#ajVis').fadeOut(0); $('#repFin').fadeIn(0);">Ajustes de reporte final</li>
         </ul>
       </section>
       <section class="contenido">
         <h2>Configuración del proceso de Evaluación del PIT</h2>
-        <p class="descripcion">Este módulo permite configurar los detalles correspondientes de todo el proceso de Autoevaluación.</p>
+        <p class="descripcion">Este módulo permite configurar los detalles correspondientes de todo el proceso de Evaluación del PIT de una IES.</p>
 
         <div class="cuadro">
           <h3>Ajustes del proceso de Evaluación del PIT de una IES </h3><br>
@@ -52,15 +52,15 @@
           <p>Seleccione el proceso de Evaluación a modificar: </p>
           <select class="select" name="proceso1">
             <option value="0"> Seleccionar</option>
-            <option value="proceso1">Universidad Tecnólogica de Jalisco</option>
-            <option value="proceso2">Universidad de Guadalajara</option>
+            <option value="proceso1">Universidad del Valle de Atemajac</option>
+            <option value="proceso2">Instituto Tecnológico de Estudios Superiores de Occidente</option>
             <option value="proceso3">Universidad de Guanajuato</option>
           </select>
         </div>
 
         <div class="cuadro" id="ajAuto">
           <h3>Ajustes de Autoevaluación </h3><br>
-          <p>La autoevaluación es el autoestudio que realiza el responsable del Programa Institucional de Tutorías de cada institución.</p>
+          <p>La autoevaluación es el autoestudio que realiza el responsable del Programa Institucional de Tutoría de cada institución.</p>
 
           <h4>Asignar Plazo</h4>
           <p>Modifique el período de tiempo de captura para que el resposable del PIT complete el formulario de autoevaluación. </p>
@@ -83,10 +83,10 @@
         </div>
 
         <div class="cuadro" id="primRevAuto">
-          <h3>Primera Revisión de Autoevaluaciones</h3><br>
+          <h3>Pre-revisión de Autoevaluaciones</h3><br>
           <p>Seleccione la Autoevaluación que desea verificar, para después habilitar la revisión de la misma a los evaluadores. </p>
           <div class="verAutoevaluacion">
-            <label for="autoevaluacion1" class="verificar">Autoevaluación perteneciente a la Universidad Tecnólogica de Jalisco</label>
+            <label for="autoevaluacion1" class="verificar">Autoevaluación perteneciente a la Universidad del Valle de Atemajac</label>
             <!--button class="btn tertiary" type="button" name="button">Ver</button-->
             <a class="btn tertiary" href="revisionAutoevaluacion.html">Ver</a>
           </div>
@@ -99,7 +99,7 @@
 
         <div class="cuadro" id="revAuto">
           <h3>Ajustes del proceso de Revisión a Autoevaluación</h3><br>
-          <p>La revisión de la autoevaluación es el proceso en el cuál cada uno de los evaluadores analiza el autoestudio de la IES.</p>
+          <p>La revisión de la autoevaluación es el proceso en el cual cada uno de los evaluadores analiza el autoestudio de la IES.</p>
 
           <h4>Asignar Evaluadores a proceso de Revisión</h4>
           <p>Seleccione al evaluador líder, que es el encargado de supervisar a los demás evaluadores.</p>
@@ -112,7 +112,7 @@
             <option value="evaluador5">Ricardo Jiménez Mendoza</option>
             <option value="evaluador6">Gerardo Ríos Sánchez</option>
           </select>
-          <p>Seleccione los evaluadores que revisarán la autoevaluación y realizarán la Visita de pares.</p>
+          <p>Seleccione los evaluadores que revisarán la autoevaluación y realizarán la visita de pares.</p>
           <div class="equipo">
             <div class="titulos">
               <span>Evaluadores disponibles</span>
@@ -136,7 +136,7 @@
           </div>
 
           <h4>Asignar Plazo</h4>
-          <p>Modifique el período de tiempo de captura para que el resposable del PIT complete el formulario de autoevaluación. </p>
+          <p>Modifique el período de tiempo de captura para que los evaluadores revisen la Autoevaluación de la IES. </p>
             <label for="fechaInicio">Fecha de Inicio: </label>
             <input type="date" name="fechaInicio" value=""><br>
             <label for="fechaFin">Fecha de Cierre: </label>
@@ -148,10 +148,10 @@
         </div>
 
         <div class="cuadro" id="confAuto">
-          <h3>Confirmación de Revisión de la Autoevaluación</h3><br>
+          <h3>Confirmación de Revisión de la autoevaluación</h3><br>
           <p>Seleccione la Revisión que desea verificar, para después habilitar la visita de pares de la misma. </p>
           <div class="verAutoevaluacion">
-            <label for="revision1" class="verificar">Revisión de la autoevaluación perteneciente a la Universidad Tecnólogica de Jalisco</label>
+            <label for="revision1" class="verificar">Revisión de la autoevaluación perteneciente a la Universidad del Valle de Atemajac</label>
             <!--button class="btn tertiary" type="button" name="button">Ver</button-->
             <a class="btn tertiary" href="#">Ver</a>
           </div>
@@ -199,8 +199,8 @@
         <div class="contacto">
           <h5>Contacto</h5>
           <ul class="contacto-info">
-            <li>Teléfono: 33 3030 0900</li>
-            <li>E-mail: contacto@utj.com</li>
+            <li>Teléfono: 33 3030 0900<span>Ext. 7326</span></li>
+            <li>E-mail: tutorias@utj.edu.mx</li>
           </ul>
         </div>
         <div class="legal">
