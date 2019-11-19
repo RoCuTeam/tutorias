@@ -1,5 +1,7 @@
 @import botones
+@import headerSmall
 @import footer
+@import porcentajes
 
 *
   margin: 0
@@ -148,7 +150,33 @@ main
               background: $white
               opacity: 0.80
               transform: scale(1.05)
-
+    .avance
+      width: 80%
+      margin: 15px 10%
+      font-size: 18px
+      .barra
+        width: 100%
+        font-size: 12px
+        line-height: 25px
+        text-align: center
+        color: black
+        text-shadow: 1px 1px white
+        margin: 5px
+        height: 25px
+        border-radius: 5px
+        border: 1px solid rgba(0, 0, 0, 0.25)
+        position: relative
+        .texto
+          width: 100%
+          height: 100%
+          font-size: 12px
+          line-height: 25px
+          position: absolute
+          z-index: 2
+          left: 0
+          text-align: center
+          .color
+            z-index: 1
     .formulario
       width: 80%
       margin: 25px 10%

@@ -110,7 +110,7 @@ function eje1(){
   cont += "          <h4 class=\"subeje opcional\">1.4 Opcional </h4>";
   cont += "          <h5 >A) Descripción</h5>";
   cont += "          <label for=\"1.4.a.1\">Describa si existe algún otro elemento importante que describa el contexto de la IES: </label>";
-  cont += "          <label for=\"1.4.a.1\" class=\"respuesta\">Constantemente se renuevan carreras y planes de estudios. Así como se resuelven problemáticas de la comunidad, profesores y alumnos.</label>";
+  cont += "          <label for=\"1.4.a.1\" class=\"respuesta\">Constantemente se renuevan carreras y planes de estudio. Así como se resuelven problemáticas de la comunidad, profesores y alumnos.</label>";
   cont += "";
   cont += "          <h5 >B) Documentos</h5>";
   cont += "          <div class=\"botones-documento\">";
@@ -144,7 +144,7 @@ function eje2(){
   cont += "          <label for=\"2.1.a.2\">En dónde se integra en el organigrama de la institución: </label>";
   cont += "          <label for=\"2.1.a.2\" class=\"respuesta\">En el puesto de responsable del Programa Institucional de Tutoría de la Universidad del Valle de Atemajac.</label>";
   cont += "          <label for=\"2.1.a.3\">Detalle los roles y responsabilidades de la alta dirección  (consejo universitario, consejo directivo, dirección general, junta de gobierno o rectoría) así como de la secretaría académica, planeación o estructuras similares.</label>";
-  cont += "          <label for=\"2.1.a.3\" class=\"respuesta\">1. Consejo universitario: Verificar que los tutores y tutorados cumplan con sus labores correspondientes y corregir cualquier problema disciplinal o que incumpla con lo establecido. <br>2. Consejo directivo: Crea y actualiza nuevos métodos para la ejecución del Programa Institucional de Tutorías. <br>3. Dirección general: Resuelve conflictos menores correspondientes a tutores o tutorados. <br>4. Rectoría: Aprueba y supervisa el trabajo del organigrama inferior, para garantizar que las responsabilidades son ejecutadas satisfactoriamente. <br>5. Secretaría académica: Supervisa el trabajo de tutores con respecto a las necesidades de los tutorados. Les brinda a los alumnos el medio para comunicar sus inquietudes y problemas.  </label>";
+  cont += "          <label for=\"2.1.a.3\" class=\"respuesta\">1. Consejo universitario: Verificar que los tutores y tutorados cumplan con sus labores correspondientes y corregir cualquier problema disciplinal o que incumpla con lo establecido. <br>2. Consejo directivo: Crea y actualiza nuevos métodos para la ejecución del Programa Institucional de Tutoría. <br>3. Dirección general: Resuelve conflictos menores correspondientes a tutores o tutorados. <br>4. Rectoría: Aprueba y supervisa el trabajo del organigrama inferior, para garantizar que las responsabilidades son ejecutadas satisfactoriamente. <br>5. Secretaría académica: Supervisa el trabajo de tutores con respecto a las necesidades de los tutorados. Les brinda a los alumnos el medio para comunicar sus inquietudes y problemas.  </label>";
   cont += "          <label for=\"2.1.a.4\">¿Cómo opera a nivel de las entidades académicas y con qué otras áreas se coordina para operar en cada programa educativo?</label>";
   cont += "          <label for=\"2.1.a.4\" class=\"respuesta\">El programa institucional de tutoría opera llevando a cabo un registro de las actividades que se realizan entre tutor y tutorado, situaciones de relevancia y solución de problemas.</label>";
   cont += "";
@@ -160,7 +160,7 @@ function eje2(){
   cont += "        <section class=\"formulario\" id=\"formulario2.2\">";
   cont += "          <h4 class=\"subeje obligatorio\">2.2 Marco normativo</h4>";
   cont += "          <h5 >A) Descripción</h5>";
-  cont += "          <label for=\"2.2.a.1\">Indicar los marcos de referencia formales que dan sustento al PIT en su institución tanto, nacionales, estatales o locales (Modelo educativo, modelo académico, guías de diseño o rediseño curricular, normatividad institucional, plan de desarrollo, reglamentos, planes institucionales, políticas nacionales, estatales, etcétera).</label>";
+  cont += "          <label for=\"2.2.a.1\">Indicar los marcos de referencia formales que dan sustento al PIT en su institución tanto, nacionales, estatales o locales (modelo educativo, modelo académico, guías de diseño o rediseño curricular, normatividad institucional, plan de desarrollo, reglamentos, planes institucionales, políticas nacionales, estatales, etcétera).</label>";
   cont += "          <label for=\"2.2.a.1\" class=\"respuesta\">Los marcos de referencia que dan sustento al PIT son: <br>1. Modelo educativo. <br>2. Modelo académico. <br>3. Plan de desarrollo. <br>4. Reglamentos.</label>";
   cont += "";
   cont += "          <h5 >B) Documentos</h5>";

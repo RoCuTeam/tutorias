@@ -1,6 +1,10 @@
 
 function presentacion(){
   var cont = '<h2>Revisión del autoestudio y validación de pares de los Programas Institucionales de Tutoría.</h2>'+
+              '<div class="avance">'+
+                '<p>Porcentaje de avance: 20% completo</p>'+
+                '<div class="barra"><span class="color veinte"></span></div>'+
+              '</div>'+
               '<article class="">'+
                 '<p>'+
                   'Dentro de las principales acciones para lograr los objetivos de las Instituciones de Educación Superior (IES), los Programas Institucionales de Tutoría (PIT) representan un eje importante a considerar; aspectos tales como el rezago educativo, la deserción escolar, la adherencia al programa, el sano desarrollo emocional y sobre todo la calidad académica tienen en la tutoría una base sólida. Una forma de lograr que las IES tengan estos programas en desarrollo y con los mejores estándares de calidad, son los procesos de mejora continua.'+
@@ -24,6 +28,10 @@ function presentacion(){
 function eje1(){
   var cont="";
   cont += "<h2>Fundamentos y condiciones de operación</h2>";
+  cont += '        <div class="avance">';
+  cont += '           <p>Porcentaje de avance: 40% completo</p>';
+  cont += '           <div class="barra"><span class="color cuarenta"></span></div>';
+  cont += '        </div>';
   cont += "        <div class=\"botones-save\">";
   cont += "          <button type=\"button\" name=\"button\" class=\"btn btn-save\"><i class=\"fas fa-save\"></i> Guardar</button>";
   cont += "        </div>";
@@ -252,10 +260,14 @@ function eje1(){
 function eje2(){
   var cont="";
   cont += "<h2>Gobierno y liderazgo</h2>";
-  cont += "        <!--Agregar form-->";
+  cont += '        <div class="avance">';
+  cont += '           <p>Porcentaje de avance: 20% completo</p>';
+  cont += '           <div class="barra"><span class="color cuarenta"></span></div>';
+  cont += '        </div>';
   cont += "        <div class=\"botones-save\">";
   cont += "          <button type=\"button\" name=\"button\" class=\"btn btn-save\"><i class=\"fas fa-save\"></i> Guardar</button>";
   cont += "        </div>";
+  cont += "        <!--Agregar form-->";
   cont += "        <section class=\"formulario\" id=\"formulario2.1\">";
   cont += "          <h4 class=\"subeje obligatorio\">2.1 Roles, responsabilidades y autoridades</h4>";
   cont += "          <h5 >A) Descripción</h5>";

@@ -7,6 +7,9 @@ body {
   font-family: sans-serif;
   font-size: 16px; }
 
+header nav ul a:hover {
+  background: rgba(117, 0, 0, 0.5); }
+
 .spacer {
   width: 100%;
   height: 60px; }
@@ -46,6 +49,7 @@ body {
   font-size: 14px;
   background: white;
   color: #750000;
+  text-decoration: none;
   margin: 0px 0 10px 20px; }
   .tertiary:hover {
     opacity: 0.50; }
@@ -59,6 +63,9 @@ body {
   font-family: sans-serif;
   font-size: 16px; }
 
+header nav ul a:hover {
+  background: rgba(117, 0, 0, 0.5); }
+
 .spacer {
   width: 100%;
   height: 60px; }
@@ -98,6 +105,7 @@ body {
   font-size: 14px;
   background: white;
   color: #750000;
+  text-decoration: none;
   margin: 0px 0 10px 20px; }
   .tertiary:hover {
     opacity: 0.50; }
@@ -137,6 +145,9 @@ body {
   font-family: sans-serif;
   font-size: 16px; }
 
+header nav ul a:hover {
+  background: rgba(117, 0, 0, 0.5); }
+
 .spacer {
   width: 100%;
   height: 60px; }
@@ -176,6 +187,7 @@ body {
   font-size: 14px;
   background: white;
   color: #750000;
+  text-decoration: none;
   margin: 0px 0 10px 20px; }
   .tertiary:hover {
     opacity: 0.50; }
@@ -186,11 +198,12 @@ footer {
   bottom: 0;
   width: 100%;
   height: 150px;
-  background: #2b2929;
+  background: #750000;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 25px; }
+  padding: 25px;
+  border-top: 5px solid white; }
   footer .logo {
     width: 35%;
     height: 100%;
@@ -218,6 +231,8 @@ footer {
         list-style: none; }
         footer .identidad .contacto .contacto-info li {
           list-style: none; }
+        footer .identidad .contacto .contacto-info span {
+          padding: 20px; }
     footer .identidad .legal {
       display: flex;
       flex-flow: row wrap;
@@ -230,7 +245,7 @@ footer {
   z-index: -1;
   left: 0;
   width: 0%;
-  height: 30px;
+  height: 100%;
   background: white; }
 
 .diez {
@@ -238,7 +253,7 @@ footer {
   z-index: -1;
   left: 0;
   width: 10%;
-  height: 30px;
+  height: 100%;
   background: #931212; }
 
 .veinte {
@@ -246,7 +261,7 @@ footer {
   z-index: -1;
   left: 0;
   width: 20%;
-  height: 30px;
+  height: 100%;
   background: #933512; }
 
 .treinta {
@@ -254,7 +269,7 @@ footer {
   z-index: -1;
   left: 0;
   width: 30%;
-  height: 30px;
+  height: 100%;
   background: #934b12; }
 
 .cuarenta {
@@ -262,7 +277,7 @@ footer {
   z-index: -1;
   left: 0;
   width: 40%;
-  height: 30px;
+  height: 100%;
   background: #936e12; }
 
 .cincuenta {
@@ -270,7 +285,7 @@ footer {
   z-index: -1;
   left: 0;
   width: 50%;
-  height: 30px;
+  height: 100%;
   background: #a3a913; }
 
 .sesenta {
@@ -278,7 +293,7 @@ footer {
   z-index: -1;
   left: 0;
   width: 60%;
-  height: 30px;
+  height: 100%;
   background: #75a913; }
 
 .setenta {
@@ -286,7 +301,7 @@ footer {
   z-index: -1;
   left: 0;
   width: 70%;
-  height: 30px;
+  height: 100%;
   background: #5ca913; }
 
 .ochenta {
@@ -294,7 +309,7 @@ footer {
   z-index: -1;
   left: 0;
   width: 80%;
-  height: 30px;
+  height: 100%;
   background: #33a913; }
 
 .noventa {
@@ -302,7 +317,7 @@ footer {
   z-index: -1;
   left: 0;
   width: 90%;
-  height: 30px;
+  height: 100%;
   background: #10b046; }
 
 .cien {
@@ -310,7 +325,7 @@ footer {
   z-index: -1;
   left: 0;
   width: 100%;
-  height: 30px;
+  height: 100%;
   background: #10b087; }
 
 body {
